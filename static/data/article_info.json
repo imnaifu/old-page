@@ -108,6 +108,12 @@
             "title": "Sass",
             "type" : "CSS",
             "date": "2017-12-06"
+        },
+        {
+            "filename": "css/flex_grid.md",
+            "title": "Flex & Grid",
+            "type" : "CSS",
+            "date": "2017-12-10"
         }
     ] 
 }
