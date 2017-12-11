@@ -8,7 +8,7 @@
         },
         {
             "filename": "markdown/markdown.md",
-            "title": "Markdown Basic",
+            "title": "Markdown Syntax",
             "type" : "Markdown",
             "date": "2017-11-23"
         },     
@@ -114,6 +114,12 @@
             "title": "Flex & Grid",
             "type" : "CSS",
             "date": "2017-12-10"
+        },
+        {
+            "filename": "css/font.md",
+            "title": "CSS字体相关",
+            "type" : "CSS",
+            "date": "2017-12-11"
         }
     ] 
 }
