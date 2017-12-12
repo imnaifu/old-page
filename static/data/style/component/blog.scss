@@ -1,0 +1,10 @@
+#blog {
+
+    // grid system
+    display: grid;
+    //sidebar, content
+    grid-template-columns: $sidebarWidth auto;
+    //navbar, content
+    grid-template-rows: $navbarHeight auto $footerHeight;
+
+}

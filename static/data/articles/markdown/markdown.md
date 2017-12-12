@@ -4,19 +4,16 @@
 
 Two space at the end line is a line break (soft break)
 
-italic: _italic_, *italic*    
-bold: __bold__, **bold**  
+_italic_, *italic*    
+__bold__, **bold**  
 `one line code`  
 
 ~~~~ 
     block quote
 ~~~~
 
-also block quote:
->
-
 three of `
-    code
+    also block quote
 three of `
 
 Syntax highlighting:
@@ -26,6 +23,9 @@ three of `
 
 hr:
 ---
+
+block quote:
+>
 
 - bullet
 * also bullet

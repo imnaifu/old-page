@@ -15,7 +15,6 @@ flex布局适合小规模布局，是一维的，要么水平方向，要么垂�
 ## 网格布局（Grid）
 网格布局适合整体的大规模布局，很像以前的table布局（事物真是螺旋上升）。
 与flex只能操作一个方向不同，grid可以操作两个方向，还可以覆盖。
-![](grid_sample.png)
 
 
 
@@ -26,5 +25,3 @@ flex布局适合小规模布局，是一维的，要么水平方向，要么垂�
 - [https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Grid_Layout](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Grid_Layout)
 - [https://www.youtube.com/watch?v=jV8B24rSN5o](https://www.youtube.com/watch?v=jV8B24rSN5o)
 - [https://www.youtube.com/watch?v=JJSoEo8JSnc](https://www.youtube.com/watch?v=JJSoEo8JSnc)
-- [https://gridbyexample.com/learn/](https://gridbyexample.com/learn/)
-- [https://css-tricks.com/snippets/css/complete-guide-grid/](https://css-tricks.com/snippets/css/complete-guide-grid/)
