@@ -120,6 +120,12 @@
             "title": "Vue API - ref",
             "type" : "Vue",
             "date": "Dec 13, 2017"            
+        },
+        {
+            "filename": "vuejs/life_cycle.md",
+            "title": "Vue Life Cycle",
+            "type" : "Vue",
+            "date": "Dec 13, 2017"            
         }
     ] 
 }

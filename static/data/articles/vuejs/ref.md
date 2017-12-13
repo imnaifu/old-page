@@ -3,6 +3,7 @@ Vue为了不让你直接操作，真是想尽了以前办法，就是不让你�
 
 ## ref & $refs
 网上找了找没看到几个讲这个的，我觉得这个很重要也很强大啊，算了我自己总结吧。
+> By adding a ref attribute to any element within the template, we can **refer** to these elements on our Vue instance. More specifically, we can access the DOM elements.
 
 ## 获取node
 一般来讲我们是怎么在javascript里面拿到节点的。
