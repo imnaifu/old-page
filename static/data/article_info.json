@@ -114,6 +114,12 @@
             "title": "Flex & Grid",
             "type" : "CSS",
             "date": "2017-12-10"
+        },
+        {
+            "filename": "vuejs/ref.md",
+            "title": "Vue API - ref",
+            "type" : "Vue",
+            "date": "Dec 13, 2017"            
         }
     ] 
 }
