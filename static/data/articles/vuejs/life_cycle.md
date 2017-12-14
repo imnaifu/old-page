@@ -2,10 +2,6 @@
 当然也是好用的原因之一啦，因为根据整个周期，提供了很多钩子（hook）函数（我也不知道哪里像钩子了- -）。
 总之就是在不同的时间点提供了接口，以便我们可以往里面插入自己想要运行的code。
 
-## 图
-先放图
-![](lifecycle.png)
-
 ## 什么是挂载(mount)
 - [What is mounting in react](https://stackoverflow.com/questions/31556450/what-is-mounting-in-react-js)
 找了好久终于找到定义，挂载实际上指的是节点挂载在DOM tree。
@@ -60,19 +56,23 @@ mounted: function () {
 
 ## 使用方法
 ### Creation
-> Use creation hooks if you need to set things up in your component both during client rendering and server rendering. You will not have access to the DOM or the target mounting element (this.$el) inside of creation hooks.
+- 不需要DOM的时候使用，因为这时候DOM还没好
+- Use creation hooks if you need to set things up in your component both during client rendering and server rendering. You will not have access to the DOM or the target mounting element (this.$el) inside of creation hooks.
 
 ### Mounting
-> Use if: You need to access or modify the DOM of your component immediately before or after the initial render.
-
-Do not use if: You need to fetch some data for your component on initialization. Use created (or created + activated for keep-alive components) for this instead, especially if you need that data during server-side rendering.
+- 在需要DOM好的时候立马进行操作的时候使用
+- 如果是进行异步从服务器拿data，要放在created，而不是这里
+- Use if: You need to access or modify the DOM of your component immediately before or after the initial render.
+- Do not use if: You need to fetch some data for your component on initialization. Use created (or created + activated for keep-alive components) for this instead, especially if you need that data during server-side rendering.
 
 ### Updating
-> Use if: You need to know when your component re-renders, perhaps for debugging or profiling.
+- 一般是你想知道什么时候重新渲染的时候用，一般拿来debug
+- Use if: You need to know when your component re-renders, perhaps for debugging or profiling.
+- Do not use if: You need to know when a reactive property on your component changes. Use computed properties or watchers for that instead.
 
-Do not use if: You need to know when a reactive property on your component changes. Use computed properties or watchers for that instead.
-
-
+## 图
+最后放图
+![](lifecycle.png)
 
 
 ## Reference
