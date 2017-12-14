@@ -69,7 +69,7 @@ mounted: function () {
 - 一般是你想知道什么时候重新渲染的时候用，一般拿来debug
 - Use if: You need to know when your component re-renders, perhaps for debugging or profiling.
 - Do not use if: You need to know when a reactive property on your component changes. Use computed properties or watchers for that instead.
-
+    
 ## 图
 最后放图
 ![](lifecycle.png)
