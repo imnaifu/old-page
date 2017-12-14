@@ -138,6 +138,24 @@
             "title": "Event in Vue",
             "type" : "Vue",
             "date": "Dec 14, 2017"                   
+        },
+        {
+            "filename": "vuejs/slot.md",
+            "title": "Vue slot",
+            "type" : "Vue",
+            "date": "Dec 15, 2017"                   
+        },
+        {
+            "filename": "vuejs/dynamic_component.md",
+            "title": "Vue Dynamic Component",
+            "type" : "Vue",
+            "date": "Dec 15, 2017"                   
+        },
+        {
+            "filename": "vuejs/form_in_vue.md",
+            "title": "Vue Form",
+            "type" : "Vue",
+            "date": "Dec 15, 2017"             
         }
     ] 
 }
