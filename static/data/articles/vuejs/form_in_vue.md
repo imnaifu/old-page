@@ -47,7 +47,7 @@ submit的时候不需要用html的submit，而是用javascript call一个ajax将
 </script>
 ```
 
-## Reference
+# Reference
 - [vue official](https://vuejs.org/v2/guide/forms.html#Basic-Usage)
 - [youtube tutorial](https://www.youtube.com/watch?v=IkymKuIkajE&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa&index=30)
 
