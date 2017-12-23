@@ -180,6 +180,18 @@
             "title": "Vuex",
             "type" : "Vue",
             "date": "Dec 18, 2017"             
+        },
+        {
+            "filename": "version_control/git.md",
+            "title": "Git & Github",
+            "type" : "Version Control",
+            "date": "Dec 23, 2017"             
+        },
+        {
+            "filename": "concept/flux.md",
+            "title": "Flux",
+            "type" : "Concept",
+            "date": "Dec 23, 2017"             
         }
 
     ] 
