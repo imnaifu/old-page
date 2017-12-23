@@ -13,3 +13,20 @@
 于是facebook就发明了flux（在下实在佩服）
 
 # 细节
+重点就在于单向数据流
+![](flux.jpg)
+这么讲，
+1. 用户看到的东西，我们叫做view
+2. view的数据从哪里来 --> store
+3. 我们怎么给store传数据呢，通过action
+4. action从哪里来的呢，通过dispatcher给的
+5. dispatcher怎么给的呢 --> 用户通过view触发的
+
+看到没，一个完整的单项闭环，再也不是原来那样，view和model之间互相传来传去了。
+这样为什么好啊，因为debug的时候，我就可以把它拦截或者停住啊，我就知道在那一刻的数据到底是多少。
+开心吧。
+
+# Vuex
+大概讲下，细节有另外一篇讲过了。
+vuex就是一个flux实现，用户的event触发dispatcher，dispatcher触发action，action里面可以包含一个或多个mutation，
+这个mutation就是操作store的state的接口，所有数据都存在store.state。完美。
