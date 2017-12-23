@@ -30,3 +30,7 @@
 大概讲下，细节有另外一篇讲过了。
 vuex就是一个flux实现，用户的event触发dispatcher，dispatcher触发action，action里面可以包含一个或多个mutation，
 这个mutation就是操作store的state的接口，所有数据都存在store.state。完美。
+
+# Reference
+- [https://zhuanlan.zhihu.com/p/20263396](https://zhuanlan.zhihu.com/p/20263396)
+- [https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207)
