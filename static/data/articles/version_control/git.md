@@ -10,11 +10,11 @@ git是你的版本管理工具，github只是个别人提供给你的可用来�
 
 # 简介
 git的基本用法和svn很像，也很简单，拿下来就用clone，提交就用commit，
-status看看本地是不是更新，log查看log。
+status看看本地是不是最新，log查看log。
 
 # 重点
 ## 1.Staging area
-Unlike svn，git有一个叫staging area的东西，就像我们常用的staging server一样，对了一层，虽然麻烦点，可是更可靠。
+Unlike svn，git有一个叫staging area的东西，就像我们常用的staging server一样，多了一层，虽然麻烦点，可是更可靠。
 svn的话，你做了changes，看下diff，OK的话就commit。git不一样，多一步。
 你做了changes，需要用git add把它加到staging区域，然后再把stagin区域的提交，多了一步来保证你确实是想提交这个的。
 
