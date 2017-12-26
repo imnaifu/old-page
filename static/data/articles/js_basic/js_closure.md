@@ -3,7 +3,7 @@
 
 ## 定义（closure）
 > This combination of a function object and a scope (a set of variable bindings) 
-in which the function’s variables are resolved is called a closure in the computer science literature.
+in which the function's variables are resolved is called a closure in the computer science literature.
 
 说人话就是，闭包就是一个函数和作用域的组合，这个作用域让这个函数能访问自由变量，
 
@@ -82,7 +82,7 @@ var counter2 = makeCounter();
 闭包很明显的体现的函数式编程的概念，相比于面向对象，真是难啊。
 总的来说，面向对象是将函数绑定到对象，以方法的形式存在，具体的值储存在对象，通过调用方法改变对象的值。
 而JS这种函数式编程，比如这个闭包，可以将变量绑定到函数，完全是反过来的。
-简单来说，OOP中，函数是为对象（变量）服务的；FP中，变量是为函数服务的。
+简单来说，OOP中，函数是为对象（变量）服务的，FP中，变量是为函数服务的。
 
 ## reference
 - [https://github.com/mqyqingfeng/Blog/issues/9](https://github.com/mqyqingfeng/Blog/issues/9)
