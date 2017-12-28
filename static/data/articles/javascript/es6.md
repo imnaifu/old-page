@@ -1,5 +1,6 @@
 # 'let' keyword
 scope within the '{}'
+
 ```javscript
 if (true){
 	var a = 1;
@@ -34,6 +35,7 @@ let add = (a,b) => {
 }
 console.log(add(2,3));//5	
 ```
+
 ### scope issue with 'this':
 ```
 //old way:
@@ -57,6 +59,7 @@ let person = {
 	}
 }
 ```
+
 ### Why arrow function is useful
 ```
 let person = {
@@ -85,10 +88,11 @@ let person = {
 ```
 
 # Spread operator &&　Rest parameters:
-### (grama: '...name') 
-
-### Rest parameters
+- (grama: '...name') 
+## Rest parameters
 - set a values => array
+- 用在函数的参数里，表示剩余参数，可用来替代arguments
+- 因为是真的array，有各种方法
 ```
 let b = function(a, ...args){
 	console.log(a, args);
@@ -98,6 +102,7 @@ b(1, 2, 3, 4); //1 [2,3,4]
 
 ## Spread operator
 - array => set of values
+- 打散array,表示一个个element
 ```
 let numbers = [1,2,3,4];
 let b = Math.max(...numbers);
@@ -115,6 +120,7 @@ console.log(b,c,d) //1,2,3
 let [bb, cc, ...dd] = a;
 console.log(bb, cc, dd); //1, 2, [3,4]
 ```
+
 - object
 ```
 let a = {

@@ -204,6 +204,12 @@
             "title": "JavaScript Array Method",
             "type" : "Javascript Basic",
             "date": "Dec 28, 2017"             
+        },
+        {
+            "filename": "css/css_variable.md",
+            "title": "CSS Variable",
+            "type" : "CSS",
+            "date": "Dec 28, 2017"             
         }
 
     ] 
