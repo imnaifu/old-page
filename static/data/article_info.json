@@ -198,6 +198,12 @@
             "title": "PHP 小总结",
             "type" : "PHP",
             "date": "Dec 25, 2017"             
+        },
+        {
+            "filename": "js_basic/js_array_method.md",
+            "title": "JavaScript Array Method",
+            "type" : "Javascript Basic",
+            "date": "Dec 28, 2017"             
         }
 
     ] 
