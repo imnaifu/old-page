@@ -1,6 +1,4 @@
-# JS Primitive value （原始值）
-
-### - 什么是原始值？     
+# 什么是原始值？     
 JS并不是像其他面向对象语言一样，一切皆对象，而是存在一个叫原始值的东西  
 原始值不是object，没有property，没有method  
 一般来说，均来自于底层实现  
@@ -13,9 +11,8 @@ There are 6 primitive data types
 - undefined 
 - symbol (new)
 
----
 
-### - 什么是原始值不可改变(immutable)?
+# 什么是原始值不可改变(immutable)?
 ```
 let a = 'abc';
 // 'abc' 这个值是不会变的，
@@ -26,9 +23,8 @@ console.log(a); //a 还是 'abcd'，不会改变
 ```
 ![](primitive_value_unchangable.jpg)
 
----
 
-### - 什么是primitive wrapper？
+# 什么是primitive wrapper？
 除了null和undefined，其他的原始值都有与其对应的wrapper object
 - string -> new String()
 - number -> new Number()
@@ -48,9 +44,8 @@ str.abc = 'abc';
 str.abc //undefined 
 ```
 
---- 
 
-### 什么是原始类型和引用类型？
+# 什么是原始类型和引用类型？
 - 忽略储存空间的差别（对JS来讲不重要）
 - 不属于原始类型的都是引用类型, array, object, function
 - **基本类型值的传递如同基本类型变量的复制一样，引用类型值的传递就如同引用类型变量的复制一样 (!important)**
@@ -71,9 +66,9 @@ console.log(a); //[1,2,3,4] changed
 console.log(b); //not changed because passed by value only
 
 ```
----
 
-### typeof 的返回值都有哪些？
+
+# typeof 的返回值都有哪些？
 typeof 是一个操作符，不是函数  
 possible return values:
 - string -> 'string'
@@ -85,9 +80,8 @@ possible return values:
 - function -> 'function'
 - object -> 'object'
 
----
 
-### instanceof的用法？
+# instanceof的用法？
 instance也是一个操作符
 - syntax: `object instanceof contructor`
 - 一般用在custom types
