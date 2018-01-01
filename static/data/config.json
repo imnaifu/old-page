@@ -3,7 +3,7 @@
 
     "enable_resume": true,
 
-    "nav_text": ["this.me", "this->resume", "self.blog"],
+    "nav_text": ["this.me", "this->resume", "self.notes"],
 
     "me_img": "",
 
