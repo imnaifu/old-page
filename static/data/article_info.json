@@ -219,9 +219,15 @@
         },
         {
             "filename": "js_basic/copy.md",
-            "title": "Make a copy   ",
+            "title": "Make a copy",
             "type" : "JavaScript",
             "date": "Dec 31, 2017"             
-        }
+        },
+        {
+            "filename": "front_end/local_session_storage.md",
+            "title": "Local & Session Storage",
+            "type" : "Front-end",
+            "date": "Jan 2, 2018"             
+        }        
     ] 
 }
