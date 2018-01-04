@@ -228,6 +228,18 @@
             "title": "Local & Session Storage",
             "type" : "Front-end",
             "date": "Jan 2, 2018"             
-        }        
+        },
+        {
+            "filename": "css/position.md",
+            "title": "CSS position",
+            "type" : "CSS",
+            "date": "Jan 4, 2018"             
+        },
+        {
+            "filename": "css/block_model.md",
+            "title": "CSS Block Model",
+            "type" : "CSS",
+            "date": "Jan 4, 2018"             
+        }                     
     ] 
 }
