@@ -228,6 +228,12 @@
             "title": "Local & Session Storage",
             "type" : "Front-end",
             "date": "Jan 2, 2018"             
-        }        
+        },
+        {
+            "filename": "js_basic/event_delegation.md",
+            "title": "Event Delegation",
+            "type" : "JavaScript Basic",
+            "date": "Jan 7, 2018"             
+        }                  
     ] 
-}
+} 
