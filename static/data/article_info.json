@@ -235,5 +235,18 @@
             "type" : "JavaScript Basic",
             "date": "Jan 7, 2018"             
         }                  
+        {
+            "filename": "css/position.md",
+            "title": "CSS position",
+            "type" : "CSS",
+            "date": "Jan 4, 2018"             
+        },
+        {
+            "filename": "css/block_model.md",
+            "title": "CSS Block Model",
+            "type" : "CSS",
+            "date": "Jan 4, 2018"             
+        }                     
+
     ] 
 } 
