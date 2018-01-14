@@ -246,6 +246,12 @@
             "title": "CSS Block Model",
             "type" : "CSS",
             "date": "Jan 4, 2018"             
+        },
+        {
+            "filename": "javascript/es6_function_params.md",
+            "title": "ES6 function parameters/desstruct/rest",
+            "type" : "JavaScript",
+            "date": "Jan 14, 2018"              
         }                     
 
     ] 
