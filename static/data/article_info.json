@@ -252,7 +252,13 @@
             "title": "ES6 function parameters/desstruct/rest",
             "type" : "JavaScript",
             "date": "Jan 14, 2018"              
-        }                     
+        },
+        {
+            "filename": "javascript/js_date.md",
+            "title": "Date Object",
+            "type" : "JavaScript",
+            "date": "Jan 16, 2018"              
+        }                      
 
     ] 
 } 
