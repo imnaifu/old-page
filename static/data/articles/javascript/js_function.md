@@ -1,9 +1,26 @@
+# 2018-01-22 Update
+看了javascriptInfo又有了些新的感想，很重要的一点是，
+函数吧，**它首先是个Object，然后才是函数**。
+作为一个对象，他有两个最基本的属性
+- name
+    - 函数的名字，
+    - declaration 的话，就是名字
+    - expression 的话，就是变量的名字
+        - 但其实匿名函数也是可以命名的
+```
+let a = function func(str){
+    func(str); //recursive call
+};
+```
+- length
+    - 函数参数的个数，不过...（rest parameter）并不算
+
 ## Function 类型
 - 函数是对象，每个函数都是Function类型的实例
 - 和其他引用类型一样有属性和方法
 - 函数名仅仅是指向对象的指针
 - 代码执行前，解释器已经通过一个函数声明提升(function declaration hoisting)的过程，读取并将函数声明添加到执行环境
-- 函数内部有两个特殊对象
+- 函数内部有 两个特殊对象
     - arguments
         - arguments.callee: 一个指针，指向拥有这个argument对象的函数，可用于递归函数消除耦合[pg.114 高级程序设计]
         - arguments.callee.caller: 指向调用当前函数的函数
