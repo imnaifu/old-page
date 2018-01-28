@@ -20,18 +20,18 @@
 ### WORK EXPERIENCE
 
 > **CommonTown Pte Ltd, Software Engineer** (Jun 2016 - Present) 
-- Develop and maintain web system, including finance system, nomination system, online teaching system etc.
-- Develop reusable component for the repository
-- Full stack development using Linux, Apache, MySQL, PHP, JQuery
+- Develop and maintain web application for client, including finance system, nomination system, online teaching system etc.
+- Build reusable component for the company code repository.
+- Full stack development using Linux, Apache, MySQL, PHP, JQuery, vanilla JavaScript
 
 ### SIDE PROJECT
 > 
-- [Baobao](https://packagist.org/packages/imnaifu/baobao): tiny MVC web framework in PHP
-- Docx-HTML Converter: file converter between docx and html in PHP
-- Build a web server at home using Raspberry Pi and Dynamic-IP technique
-- A pure front-end [blog](https://imnaifu.github.io/) framework using Vuejs
+- [MarkdownBlog](https://github.com/imnaifu/MarkdownBlog): 
+Build an JavaScript blog application (SPA) for my own blog, using ES6, Vuejs, Vuex and Vue-router, with CSS grid and flex layout, build in Vue-Cli.
+- [Baobao](https://packagist.org/packages/imnaifu/baobao): A tiny MVC web framework in PHP.
+- [url2docx](https://github.com/imnaifu/url2docx): A PHP lib that can generate an docx file from an URL
 
 ### SKILLS 
-> PHP, MySQL, Linux, Python, HTML, CSS, JavaScript, JQuery, Vuejs, Bootstrap, Ajax, SVN, GIT   
+> PHP, MySQL, Linux, Python, HTML, CSS, JavaScript, JQuery, Vuejs, Bootstrap, Ajax, SVN, Git   
 
 
