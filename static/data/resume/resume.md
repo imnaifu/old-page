@@ -1,4 +1,4 @@
-## XU NAIFU
+# XU NAIFU
 > 
 - +65 90198346 
 - naifu_xu@outlook.com
@@ -14,14 +14,14 @@
 - Bachelor of Science in Electronic Information Science and Technology 
 
 > **Feng Chia University** 
-- Feb - Jul 2014 (Exchange Program)   
+- Feb - Jul 2014 (Taiwan, Exchange Program)   
 - Major in Communications Engineering
 
 ### WORK EXPERIENCE
 
 > **CommonTown Pte Ltd, Software Engineer** (Jun 2016 - Present) 
-- Develop and maintain web platform system, including finance system, nomination system, online teaching system etc.
-- Develop scalable and reusable component for the repository
+- Develop and maintain web system, including finance system, nomination system, online teaching system etc.
+- Develop reusable component for the repository
 - Full stack development using Linux, Apache, MySQL, PHP, JQuery
 
 ### SIDE PROJECT
