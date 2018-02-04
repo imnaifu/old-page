@@ -258,7 +258,12 @@
             "title": "Date Object",
             "type" : "JavaScript",
             "date": "Jan 16, 2018"              
-        }                      
-
+        },                     
+        {
+            "filename": "javascript/callback&promise.md",
+            "title": "Callback & Promise",
+            "type" : "JavaScript",
+            "date": "Feb 4, 2018"              
+        }
     ] 
 } 
