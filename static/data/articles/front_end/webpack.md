@@ -32,3 +32,4 @@ config file 四大要点：
 ## Reference 
 - [http://www.jianshu.com/p/42e11515c10f](http://www.jianshu.com/p/42e11515c10f)  
 - [https://zhuanlan.zhihu.com/p/27046322](https://zhuanlan.zhihu.com/p/27046322)
+- [https://www.youtube.com/watch?v=8DDVr6wjJzQ&index=3&list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os](https://www.youtube.com/watch?v=8DDVr6wjJzQ&index=3&list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os)
