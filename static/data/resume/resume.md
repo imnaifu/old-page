@@ -12,6 +12,7 @@
 > **University of Electronic Science and Technology of China (UESTC)** 
 - Sep.2011 - Jun.2015 (Chengdu, China)   
 - Bachelor of Science in Electronic Information Science and Technology 
+- People’s scholarship ×3
 
 > **Feng Chia University** 
 - Feb - Jul 2014 (Taiwan, Exchange Program)   
@@ -20,7 +21,7 @@
 ### WORK EXPERIENCE
 
 > **CommonTown Pte Ltd, Software Engineer** (Jun 2016 - Present) 
-- Develop and maintain Web system, including nomination, finance, teaching etc
+- Develop and maintain Web Application, including nomination module, finance module and online teaching module etc.
 - Ensure a reliable and scalable system with the increasing data.
 - Full stack development using Linux, Apache, MySQL, PHP, JQuery, Vanilla JavaScript.
 - Build reusable component for the company code repository.
@@ -33,6 +34,6 @@ Build an JavaScript blog application (SPA) for my own blog, using ES6, Vuejs, Vu
 - [url2docx](https://github.com/imnaifu/url2docx): A PHP lib that can generate an docx file from an URL
 
 ### SKILLS 
-> PHP, MySQL, Linux, Python, HTML, CSS, JavaScript, JQuery, Vuejs, Bootstrap, Ajax, SVN, Git   
+> PHP, MySQL, Linux, Python, HTML5, CSS3, JavaScript, ES6, JQuery, Vuejs, Bootstrap, Ajax, SVN, Git   
 
 
