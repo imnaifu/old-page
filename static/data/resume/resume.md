@@ -20,9 +20,10 @@
 ### WORK EXPERIENCE
 
 > **CommonTown Pte Ltd, Software Engineer** (Jun 2016 - Present) 
-- Develop and maintain web application for client, including finance system, nomination system, online teaching system etc.
+- Develop and maintain Web system, including nomination, finance, teaching etc
+- Ensure a reliable and scalable system with the increasing data.
+- Full stack development using Linux, Apache, MySQL, PHP, JQuery, Vanilla JavaScript.
 - Build reusable component for the company code repository.
-- Full stack development using Linux, Apache, MySQL, PHP, JQuery, vanilla JavaScript
 
 ### SIDE PROJECT
 > 
