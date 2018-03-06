@@ -2,7 +2,6 @@
 最近看了一篇新的，有了更深的了解，关于闭包的实现，实际上靠的是个隐藏变量`[[Environment]]`，
 每个函数都有这么一个hidden property，它让函数remember where they were created，这样函数就能通过这个变量，
 访问到它的词法作用域下的外部变量。
-![https://javascript.info/closure](https://javascript.info/closure)
 ![]([[enviroment]].png)
 换句话说，其实js闭包的实现主要是通过两个机制，作用域链和垃圾回收，理解这两个其实也就差不多了。
 
@@ -94,6 +93,7 @@ var counter2 = makeCounter();
 简单来说，OOP中，函数是为对象（变量）服务的，FP中，变量是为函数服务的。
 
 ## reference
+- [https://javascript.info/closure](https://javascript.info/closure)
 - [https://github.com/mqyqingfeng/Blog/issues/9](https://github.com/mqyqingfeng/Blog/issues/9)
 - [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 - [https://www.w3schools.com/js/js_function_closures.asp](https://www.w3schools.com/js/js_function_closures.asp)
