@@ -264,6 +264,12 @@
             "title": "Callback & Promise",
             "type" : "JavaScript",
             "date": "Feb 4, 2018"              
+        },
+        {
+            "filename": "front_end/dom.md",
+            "title": "DOM",
+            "type" : "Front-end",
+            "date": "Feb 23, 2018"             
         }
     ] 
 } 
