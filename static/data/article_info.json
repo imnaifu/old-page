@@ -270,6 +270,12 @@
             "title": "DOM",
             "type" : "Front-end",
             "date": "Feb 23, 2018"             
+        },
+        {
+            "filename": "front_end/jsonp.md",
+            "title": "JSONP",
+            "type" : "Front-end",
+            "date": "March 15, 2018"             
         }
     ] 
 } 
