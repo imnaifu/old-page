@@ -96,9 +96,25 @@ ajax.onreadystatechange = function (){
 - touchCancel
 
 # HTTP
+## method
+- GET, POST
+- PUT, DELETE
+- HEAD: Same as GET, but only return headers no document body
+- OPTIONS: return the http methods that the server supports
+- CONNECT: converts the connection to a transparent TCP/IP tunnel
+
 ## status code
+- 200, 404, 500
+- 304: not modified
+- 400： bad request, invalid syntax
+- 403: forbidden
+
+
 ## difference between 301 & 302
-## how to do http cache
+- 301: resource is moved permanently, client should request the new location from now on
+- 302: resource is temporarily located somewhere else, client should continue request for the original url 
+
+## how to do http cache	
 ## catch-control & etag
 ## cookie, session
 ## localStorage & cookie
@@ -120,8 +136,26 @@ ajax.onreadystatechange = function (){
 	- server side can also set cookie domain to root '/' 		
 
 ## JSONP
-- 
-## CORS
+- [https://imnaifu.github.io/#/blog/JSONP](https://imnaifu.github.io/#/blog/JSONP)
+
+## CORS (Cross-Origin Resource Sharing)
+- same like JSONP is another way of cross domain messaging
+- you can write you ajax like the way before, browser will auto detect if it belong to the same source,
+if not, `Origin` will be added in the header to tell the server the source of the request, then server will
+decide weather to respond or not.
+- includes simple request & complicate request
+1. simple request 
+	- HEAD, GET, POST method, and only a few header
+	- just sent with the origin info, if server respond with header 'Access-Control-Allow-Origin' then success, 
+	else fail, will be catch by the onerror method from XMLHttpRequest
+	- for cookie, follow the same-origin policy, only send same-origin cookie
+	- if wanna sent cookie：
+		1. server need to set `Access-Control-Allow-Credentials: true`
+		2. ajax call also need to set `var xhr = new XMLHttpRequest(); xhr.withCredentials = true;`
+2. complicate request (if wanna json data, goes here)
+	- sent a preflight request to server using OPTION http method with the origin&method to check with server
+	- if the server accept the origin and method, then same as the simple request
+
 ## postMessage (cross-document messaging)
 - usage `otherWindow.postMessage(message, targetOrigin)`
 - Using the Messaging API `postMessage()`, plain text postMessageage can be sent from one domain to another (e.g from parent to iframe)
