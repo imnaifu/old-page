@@ -278,9 +278,9 @@
             "date": "March 15, 2018"             
         },        
         {
-            "filename": "cache/http_cache.md",
+            "filename": "front_end/http_cache.md",
             "title": "HTTP Cache",
-            "type" : "Cache",
+            "type" : "Front-end",
             "date": "March 16, 2018"             
         }
     ] 
