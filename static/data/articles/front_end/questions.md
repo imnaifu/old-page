@@ -2,12 +2,12 @@
 ## HTML semantic 
 1. purpose: 
 	- SEO
-	- More reabable
-2. how 
+	- More readable
+2. how:
 	- using specific tag
 
 ## mata: viewport
-- what is viewport: view port is the user visable area of a web page, so it varies with the device
+- what is viewport: view port is the user visible area of a web page, so it varies with the device
 - how to use: `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 	- `width=device-width` set the width of the page to follow the screen width of the device
 	- `initial-scale=1.0` set the initial zoom level when first load
@@ -20,7 +20,7 @@
 - content, padding, border, margin
 
 ## css reset, normalize.css
-- different browser has different default stlye, 
+- different browser has different default style, 
 these two are used to eliminate the default style to make ur interface look the same at different browser
 - difference is css reset everything, normalize.css remain part of it
 	
@@ -103,6 +103,10 @@ ajax.onreadystatechange = function (){
 - OPTIONS: return the http methods that the server supports
 - CONNECT: converts the connection to a transparent TCP/IP tunnel
 
+## port
+- http: 80
+- https: 443
+
 ## status code
 - 200, 404, 500
 - 304: not modified
@@ -115,8 +119,12 @@ ajax.onreadystatechange = function (){
 - 302: resource is temporarily located somewhere else, client should continue request for the original url 
 
 ## how to do http cache	
+there are two kinds of cache
+
 ## catch-control & etag
+
 ## cookie, session
+
 ## localStorage & cookie
 
 ## GET & POST

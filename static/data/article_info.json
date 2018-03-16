@@ -276,6 +276,12 @@
             "title": "JSONP",
             "type" : "Front-end",
             "date": "March 15, 2018"             
+        },        
+        {
+            "filename": "cache/http_cache.md",
+            "title": "HTTP Cache",
+            "type" : "Cache",
+            "date": "March 16, 2018"             
         }
     ] 
 } 
