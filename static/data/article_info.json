@@ -282,6 +282,12 @@
             "title": "HTTP Cache",
             "type" : "Front-end",
             "date": "March 16, 2018"             
+        },
+        {
+            "filename": "front_end/state.md",
+            "title": "Front End State Management",
+            "type" : "Front-end",
+            "date": "March 20, 2018"  
         }
     ] 
 } 

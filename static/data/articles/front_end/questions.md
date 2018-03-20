@@ -35,6 +35,22 @@ these two are used to eliminate the default style to make ur interface look the 
 - [https://www.w3schools.com/css/css_align.asp](https://www.w3schools.com/css/css_align.asp)
 
 ## selector order 
+- simple
+	- #id 
+	- .class  
+	- tag
+- attribute	
+	- [attr]
+	- [attr=value]
+	- [attr~=value]: attr contains value, e.g 'class="ab bc"' contains bc
+- pseudo-classes： ':'
+- pseudo-elements: '::'
+- combination
+	- h1, h2 (多选)
+	- div p (所有子节点)
+	- div > p (第一层子节点)
+	- div + p (后面紧邻的兄弟节点)
+	- div ~ p (后面所有兄弟节点)
 
 ## BFC(Block formatting context)
 - a container that has float rules(start from left/right) and also hard boundaries (for not going outside)
@@ -52,10 +68,11 @@ these two are used to eliminate the default style to make ur interface look the 
 ## js data type
 1. primitive
 	- Boolean, Null, Undefined, Number, String, Symbol
-2. composit
+2. composite
 	- Object, Array
 
 ## Promise
+
 ## Ajax (pure)
 ```
 var ajax = new XMLHttpRequest();
@@ -74,12 +91,23 @@ ajax.onreadystatechange = function (){
 ```
 
 ## closure
+	- []
 ## this
+
 ## self-invoking function
+	- it's used to solve the scope problem to avoid having same name is same scope
+	- 当引入一个包的时候，可能会有重名变量或者函数，立即执行函数可以把它定义域限制在里面
+
 ## async/await
+
 ## deep clone
+	- 递归copy one by one 
+
 ## remove duplicate value in array
+	- let return = Array.from(new Set(a));
+
 ## using regex do the same thing as string.trim()
+	
 ## prototype
 ## ES6 class
 ## js inheritance
@@ -118,16 +146,28 @@ ajax.onreadystatechange = function (){
 - 301: resource is moved permanently, client should request the new location from now on
 - 302: resource is temporarily located somewhere else, client should continue request for the original url 
 
-## how to do http cache	
-there are two kinds of cache
-
-## catch-control & etag
+## how to do http cache, catch-control & etag	
+- [https://imnaifu.github.io/#/blog/HTTP%20Cache](https://imnaifu.github.io/#/blog/HTTP%20Cache)
 
 ## cookie, session
+- server send 'Set-Cookie' header to client
+- then every new request, browser will send requeset with stored cookie to server 
+- Secure & HttpOnly
+	1. 'Secure' tag, means cookie will only sent by 'https' protocal
+	2. 'HttpOnly' tag inaccessable to 'document.cookie', they are only sent to the server
+- session cookie & persistent cookie
+	1. session cookie, no 'Expires', deleted after browser close
+	2. permanent cookie, expire after a specific date(Expires) or after a specific length of time(Max-Age) 
+- session used to store information across multiple pages
 
 ## localStorage & cookie
+- storage size, functionality, traffic
+cookie -> for server side reading
+local storage -> for client side reading
+session storage -> same as local storage expire when browser closed
 
 ## GET & POST
+...
 
 ## cross domain
 - same-origin policy
