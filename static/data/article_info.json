@@ -288,6 +288,12 @@
             "title": "Front End State Management",
             "type" : "Front-end",
             "date": "March 20, 2018"  
+        },
+        {
+            "filename": "front_end/questions.md",
+            "title": "Front End General Questions",
+            "type" : "Front-end",
+            "date": "March 20, 2018"  
         }
     ] 
 } 

@@ -1,6 +1,6 @@
 # HTML
 ## HTML semantic 
-1. purpose: 
+1. 目的: 
 	- SEO
 	- More readable
 2. how:
@@ -72,9 +72,11 @@ these two are used to eliminate the default style to make ur interface look the 
 	- Object, Array
 
 ## Promise
+- [https://imnaifu.github.io/#/blog/Callback%20&%20Promise](https://imnaifu.github.io/#/blog/Callback%20&%20Promise)
 
 ## Ajax (pure)
-```
+
+```javascript
 var ajax = new XMLHttpRequest();
 ajax.open("GET", "url");
 ajax.send({/** data here **/});
@@ -91,29 +93,82 @@ ajax.onreadystatechange = function (){
 ```
 
 ## closure
-	- []
+- [https://imnaifu.github.io/#/blog/JavaScript%20%E9%97%AD%E5%8C%85](https://imnaifu.github.io/#/blog/JavaScript%20%E9%97%AD%E5%8C%85)
+
 ## this
+- [https://imnaifu.github.io/#/blog/JS%20'this'](https://imnaifu.github.io/#/blog/JS%20'this')
 
 ## self-invoking function
-	- it's used to solve the scope problem to avoid having same name is same scope
-	- 当引入一个包的时候，可能会有重名变量或者函数，立即执行函数可以把它定义域限制在里面
+- it's used to solve the scope problem to avoid having same name is same scope
+- 当引入一个包的时候，可能会有重名变量或者函数，立即执行函数可以把它定义域限制在里面
 
 ## async/await
+- A replacement of 'Promise'
+- add async before 'function' to make that function a async function
+- add await before the promise object to claim that function should be stop here to wait for that promise to resolve/reject
+(during the meantime, other function still can run)
+
+```javascript
+	async function thisIsAnAsyncFunc(){
+		let p = new Promise((resolve, reject) => {
+			setTimeout(() => {resolve('Done')}, 1000);
+		});
+
+		let result = await p; // wait here 
+	}
+```
 
 ## deep clone
-	- 递归copy one by one 
+- 递归copy one by one 	
 
 ## remove duplicate value in array
-	- let return = Array.from(new Set(a));
+- let return = Array.from(new Set(a));
 
 ## using regex do the same thing as string.trim()
-	
+
+```javascript
+//trim(): remove all beginning and ending space from a string
+//1st replace remove all beginning space, second replace remove all ending space
+let a = 'some string here for trimming';
+let b = a.replace('/^\s+/', '').replace('/\s+$/');
+```
+
 ## prototype
+- [https://imnaifu.github.io/#/blog/%E5%8E%9F%E5%9E%8B%E9%93%BE%E4%B8%8E%E7%BB%A7%E6%89%BF](https://imnaifu.github.io/#/blog/%E5%8E%9F%E5%9E%8B%E9%93%BE%E4%B8%8E%E7%BB%A7%E6%89%BF)
+
 ## ES6 class
+```javascript
+class Abc extends Def{
+	constructor(attr1, attr2){
+		super(attr1, attr2);
+		this.attr1 = attr1;
+		this.attr2 = attr2;
+		this.arr = [];
+	}
+
+	//getter function 
+	get name(){	
+		return this.attr1;
+	}
+
+	//setter function
+	set name(someName){
+		this.arr.push(someName);
+	}
+
+	//static function
+	static addByTwo(n){
+		return n + 2;
+	}
+}
+
+```
 ## js inheritance
+
 
 # DOM
 ## DOM event 
+
 ## Event delegation(事件委托)
 - means that parent node handle event for child node
 
@@ -208,14 +263,15 @@ decide weather to respond or not.
 - usage `otherWindow.postMessage(message, targetOrigin)`
 - Using the Messaging API `postMessage()`, plain text postMessageage can be sent from one domain to another (e.g from parent to iframe)
 - the receiving page should dispatch event `window.addEventListener("message", handleMessage)`
-- ```javascirpt
-		// then in the function
-		function handleMessage(e){
-			e.origin //source url
-			e.data //data
-			e.source //is the source window reference, can be used to send data back
-		}
-	```
+
+```javascirpt
+	// then in the function
+	function handleMessage(e){
+		e.origin //source url
+		e.data //data
+		e.source //is the source window reference, can be used to send data back
+	}
+```
 
 # Security
 ## XSS (cross site scripting)
