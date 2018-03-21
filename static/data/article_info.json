@@ -294,6 +294,12 @@
             "title": "Front End General Questions",
             "type" : "Front-end",
             "date": "March 20, 2018"  
+        },
+        {
+            "filename": "js_basic/property_descriptor.md",
+            "title": "Property descriptor and flag",
+            "type" : "JavaScript Basic",
+            "date": "March 21, 2018"  
         }
     ] 
 } 
