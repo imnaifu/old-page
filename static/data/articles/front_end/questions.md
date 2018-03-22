@@ -1,16 +1,30 @@
 # HTML
-## HTML semantic 
-1. 目的: 
+## HTML semantic(语义化) 
+- 目的: 
 	- SEO
-	- More readable
-2. how:
-	- using specific tag
+	- 没有CSS也能很好展示
+	- 方便其他设备（盲人阅读）
+	- 便于维护
+
+- 简单来讲就是为了让机器理解内容, 根据页面内容与结构，选择合适的标签和属性
+- 具体讲，原来是用div/span + class的地方，根据其语义，可以换成新的tag
+	- nav, header, main, footer
+	- article, section, aside
+	- figure, figcaption
+	- detail, summary
+	- time
+	- b, strong(semantic)
+	- i, em(semantic)
+
+- 更多
+	- microdata
+
 
 ## mata: viewport
 - what is viewport: view port is the user visible area of a web page, so it varies with the device
 - how to use: `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 	- `width=device-width` set the width of the page to follow the screen width of the device
-	- `initial-scale=1.0` set the initial zoom level when first load
+	- `initial-sc	ale=1.0` set the initial zoom level when first load
 
 ## canvas:
 - what is canvas: used to draw graphics by using javascript
