@@ -19,23 +19,28 @@
 - 更多
 	- microdata
 
-
 ## mata: viewport
+- 简单来说，device的默认layout viewport一般是在960px左右，如果我们不做任何处理，页面会以很小的方式呈现在移动设备
+- 加上width=device-width之后，可以让整个页面按照移动设备的屏幕大小展示，总宽度为320px
+- initial-scale=1.0表示不进行任何缩放（取值为0-1）
 - what is viewport: view port is the user visible area of a web page, so it varies with the device
 - how to use: `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 	- `width=device-width` set the width of the page to follow the screen width of the device
-	- `initial-sc	ale=1.0` set the initial zoom level when first load
+	- `initial-scale=1.0` set the initial zoom level when first load
 
 ## canvas:
+- used to build a clock on canvas
 - what is canvas: used to draw graphics by using javascript
 
 # CSS
 ## block model
 - content, padding, border, margin
 
+## css position
+- inherit, static, relative, absolute, fixed, sticky(toggle from relative to fixed)
+
 ## css reset, normalize.css
-- different browser has different default style, 
-these two are used to eliminate the default style to make ur interface look the same at different browser
+- 清除浏览器默认样式， 从而让UI在不同的浏览器看起来也一样
 - difference is css reset everything, normalize.css remain part of it
 	
 ## css centralize
@@ -44,7 +49,7 @@ these two are used to eliminate the default style to make ur interface look the 
 	- margin: auto
 - vertical
 	- line-height
-	- padding
+	- padding（父元素高度未定，用padding撑起来）
 	- top & translate
 - [https://www.w3schools.com/css/css_align.asp](https://www.w3schools.com/css/css_align.asp)
 
@@ -79,6 +84,17 @@ these two are used to eliminate the default style to make ur interface look the 
 3. use pseudo-element ::after {content:''; clear:both; display: block;}
 
 # JS 
+## DOM 增删改查
+- 查
+	- querySelector, querySelectorAll
+- JQuery
+	- .text() / .html()
+	- .css('name', 'value')
+	- .hasClass() / .addClass() / .removeClass()
+	- .hide() / .show()
+	- .attr() / removeAttr()
+	- .val()
+
 ## js data type
 1. primitive
 	- Boolean, Null, Undefined, Number, String, Symbol
