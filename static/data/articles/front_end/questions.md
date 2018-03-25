@@ -83,6 +83,11 @@
 2. set parent element style="overflow： auto/hidden"
 3. use pseudo-element ::after {content:''; clear:both; display: block;}
 
+## width, height
+- scroll width: 不包含滚动条，包含隐藏内容，整体区域
+- client width：不包含滚动条，不包含隐藏内容，显示区域
+- offset width：包含滚动条，不包含隐藏内容，显示区域
+
 # JS 
 ## DOM 增删改查
 - 查
