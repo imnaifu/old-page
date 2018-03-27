@@ -300,6 +300,12 @@
             "title": "Property descriptor and flag",
             "type" : "JavaScript Basic",
             "date": "March 21, 2018"  
+        },
+        {
+            "filename": "front_end/npm.md",
+            "title": "NPM 知识点梳理一下",
+            "type" : "Front-end",
+            "date": "March 27, 2018"  
         }
     ] 
 } 
