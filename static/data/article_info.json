@@ -7,7 +7,7 @@
             "date": "2017-11-23"
         },
         {
-            "filename": "markdown/markdown.md",
+            "filename": "others/markdown.md",
             "title": "Markdown Basic",
             "type" : "Markdown",
             "date": "2017-11-23"
@@ -306,6 +306,13 @@
             "title": "NPM 知识点梳理一下",
             "type" : "Front-end",
             "date": "March 27, 2018"  
+        },
+        {
+            "filename": "others/perl_regex.md",
+            "title": "Perl Regular Expression",
+            "type" : "Others",
+            "date": "March 26, 2018"  
         }
+        
     ] 
 } 
