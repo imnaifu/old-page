@@ -23,3 +23,13 @@
 	- componentDidUpdate
 - unmounted
 	- componentWillUnmount 
+
+3. 当存在子组件时
+![](parent-child-update.jpg)
+![](parent-child-mount.jpg)
+
+4. Diagram
+![](react-lifecycle.jpg)
+
+# Ref
+- [https://zhuanlan.zhihu.com/p/30032664](https://zhuanlan.zhihu.com/p/30032664)
