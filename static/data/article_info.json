@@ -50,9 +50,9 @@
             "date": "2017-11-23"
         },
         {
-            "filename": "concept/rest.md",
+            "filename": "others/rest.md",
             "title": "REST API",
-            "type" : "Concept",
+            "type" : "Others",
             "date": "2017-11-23"
         },
         {
@@ -188,9 +188,9 @@
             "date": "Dec 23, 2017"             
         },
         {
-            "filename": "concept/flux.md",
+            "filename": "react/flux.md",
             "title": "Flux",
-            "type" : "Concept",
+            "type" : "React",
             "date": "Dec 23, 2017"             
         },
         {
@@ -312,6 +312,12 @@
             "title": "Perl Regular Expression",
             "type" : "Others",
             "date": "March 26, 2018"  
+        },
+        {
+            "filename": "react/react_basic.md",
+            "title": "React基础",
+            "type" : "React",
+            "date": "March 28, 2018"  
         }
         
     ] 
