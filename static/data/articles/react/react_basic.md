@@ -1,9 +1,8 @@
-1. state & prop
+# 1. state & prop
 - props应该是外部（parent）定义的，并且一般不改变的
 - staet一般是属于组件内部的，可变的		
 
-
-2. 三个状态
+# 2. 三个状态
 - mounted
 	- componentWillMount
 	- render
@@ -24,11 +23,11 @@
 - unmounted
 	- componentWillUnmount 
 
-3. 当存在子组件时
+# 3. 当存在子组件时
 ![](parent-child-update.jpg)
 ![](parent-child-mount.jpg)
 
-4. Diagram
+# 4. Diagram
 ![](react-lifecycle.jpg)
 
 # Ref

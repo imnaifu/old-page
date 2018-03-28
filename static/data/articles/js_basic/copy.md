@@ -40,9 +40,12 @@ const new = Array.from(old);
 
 ## Object
 ### Object.assign()
-- shallow copy
+- 浅复制
+- 第一个参数是初始值，从第二个参数开始，依次取出其中的key-value，然后加在初始值里面（会覆盖）
 ```
-const new = Object.assign({}, old);
+const a = { name:'berry', age:'26' }
+const b = Object.assign({}, old, { age:'27' });
+//b = { name:'berry', age:'27'}
 ```
 
 ### JSON.parse(JSON.stringify(your_object))
