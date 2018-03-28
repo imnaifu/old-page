@@ -1,16 +1,15 @@
-#
-
-### Basic
+# Basic
 - seperator (/ # ~)
 - meta character
 
-### Greedy/Lazy mode
+# Greedy/Lazy mode
 - greedy mode match as more as possible (* +)
 - lazy mode match as less as possible (?)
 - {2} match exactly 2 times,
 - {2,3} match 2 or 3 times
 - {2,} match 2 or more times
-### PHP
+
+# PHP
 - preg_match($pattern, $string, $matches)
     - return match times, 0 or 1
 - preg_match_all($pattern, $string, $matches)
@@ -25,7 +24,7 @@ echo preg_replace($pattern, $replacement, $string); //结果为：2014, April 15
 ```
     
 
----
+# Details
 - **/**: start and end match
 - **^**: match start of the string, or 'nothing but' inside []
 - **$**: match end of the string
@@ -50,8 +49,6 @@ echo preg_replace($pattern, $replacement, $string); //结果为：2014, April 15
 - **\D**:  Match non-digit character
 - **word boundary**: like , | . | ! | space ....
 
-http://www.troubleshooters.com/codecorn/littperl/perlreg.htm
-
 - **everything inside the brackets represents ONE character**
 - if($string =~ /[Clinton|Bush|Reagan]/){$office = "President"}
 
@@ -63,3 +60,7 @@ http://www.troubleshooters.com/codecorn/littperl/perlreg.htm
 
 - there are 14 metacharacters that must be preceded by a backslash "" in order to drop their special meaning and be treated literally inside an expression: the open/close square brackets, "[" and "]"; the backslash ""; the caret "^"; the dollar sign "$"; the period or dot "."; the vertical bar or pipe symbol "|"; the question mark "?"; the asterisk "*"; the plus-sign "+"; open/close curly braces, "{" and "}"; and open/close parenthesis, "(" and ")".[2]
 - If you want to use any of these characters as a literal in a regex, you need to escape them with a backslash. For example, to match the arithmetic expression "(1+1)*3=6" with a regex, then the correct regex is "(1+1)*3=6". Otherwise, the parenthesis, plus-sign, and asterisk will have a special meaning.
+
+
+# Refs
+- [http://www.troubleshooters.com/codecorn/littperl/perlreg.htm](http://www.troubleshooters.com/codecorn/littperl/perlreg.htm)
