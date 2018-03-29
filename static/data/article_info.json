@@ -318,6 +318,12 @@
             "title": "React基础",
             "type" : "React",
             "date": "March 28, 2018"  
+        },
+        {
+            "filename": "javascript/es6_module.md",
+            "title": "ES6模块化",
+            "type" : "JavaScript",
+            "date": "March 29, 2018"  
         }
         
     ] 
