@@ -7,7 +7,7 @@ export指的是导出的东西，有两种方式，default & named
 
 - default
 
-```	
+```javascript
 	//file a.js
 	const a = 1;
 	export default a;
@@ -20,7 +20,7 @@ export指的是导出的东西，有两种方式，default & named
 
 - named
 
-```
+```javascript
 	//file a.js
 	const a = 1;
 	const b = 2;
@@ -40,7 +40,7 @@ import指的是引入，可以引入全部，也可以只引入一部分
 
 - import all
 
-```
+```javascript
 	//file a.js
 	const a = 1;
 	const b = 2;
@@ -57,7 +57,7 @@ import指的是引入，可以引入全部，也可以只引入一部分
 
 - import partial
 
-```
+```javascript
 	//file a.js
 	const a = 1;
 	const b = 2;
@@ -73,7 +73,7 @@ import指的是引入，可以引入全部，也可以只引入一部分
 
 - import default & all & partial
 
-```
+```javascript
 	// file a.js
 	const a = 1;
 	const b = 2;
