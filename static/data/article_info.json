@@ -324,6 +324,12 @@
             "title": "ES6模块化",
             "type" : "JavaScript",
             "date": "March 29, 2018"  
+        },        
+        {
+            "filename": "others/vscode.md",
+            "title": "VSCode使用",
+            "type" : "Others",
+            "date": "April 2, 2018"  
         }
         
     ] 
