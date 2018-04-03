@@ -212,6 +212,12 @@
             "date": "Dec 28, 2017"             
         },
         {
+            "filename": "css/transition.md",
+            "title": "CSS Animation",
+            "type" : "CSS",
+            "date": "Dec 28, 2017"             
+        },
+        {
             "filename": "front_end/console.md",
             "title": "Console 用法",
             "type" : "Front-end",
