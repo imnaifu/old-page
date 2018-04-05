@@ -1,5 +1,5 @@
 # React 组件的使用
-理想情况下，React组件应该分为两种，Smart and Dumb。这样分了之后，又变成了MVC。
+理想情况下，React组件应该分为两种，Smart(容器组件) and Dumb。这样分了之后，又变成了MVC。
 - M -> redux
 - V -> Dumb component
 - C -> Smart component

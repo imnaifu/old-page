@@ -1,6 +1,12 @@
 { 
     "articles": [
         {
+            "filename": "system/network_basic.md",
+            "title": "Network Basic Knowledge",
+            "type" : "System",
+            "date": "2017-11-23"
+        },
+        {
             "filename": "system/basic_command.md",
             "title": "Linux Basic Command",
             "type" : "System",
@@ -63,19 +69,25 @@
         {
             "filename": "algorithm/sorting_code.md",
             "title": "Sorting algorithm JavaScript implementation",
-            "type" : "Others",
+            "type" : "Algorithm",
             "date": "2017-11-23"
         },
         {
             "filename": "algorithm/sorting_algorithm.md",
             "title": "Sorting algorithm",
-            "type" : "Others",
+            "type" : "Algorithm",
+            "date": "2017-11-23"
+        },
+        {
+            "filename": "algorithm/big_o.md",
+            "title": "Big O",
+            "type" : "Algorithm",
             "date": "2017-11-23"
         },
         {
             "filename": "datastructure/bst_implementation.md",
             "title": "Binary search tree Javascript implementation",
-            "type" : "Others",
+            "type" : "Algorithm",
             "date": "2017-11-23"
         },
         {
@@ -260,6 +272,12 @@
             "date": "Dec 18, 2017"             
         },
         {
+            "filename": "others/sublime.md",
+            "title": "Sublime",
+            "type" : "Others",
+            "date": "Dec 23, 2017"             
+        },
+        {
             "filename": "others/git.md",
             "title": "Git & Github",
             "type" : "Others",
@@ -274,7 +292,31 @@
         {
             "filename": "database/db_design_principle.md",
             "title": "Database Design Principles",
-            "type" : "Others",
+            "type" : "Database",
+            "date": "Dec 23, 2017"             
+        },
+        {
+            "filename": "database/db_index.md",
+            "title": "Database Index",
+            "type" : "Database",
+            "date": "Dec 23, 2017"             
+        },
+        {
+            "filename": "database/data_type.md",
+            "title": "MySQL Data Type",
+            "type" : "Database",
+            "date": "Dec 23, 2017"             
+        },
+        {
+            "filename": "database/db_optimization.md",
+            "title": "Database Optimization",
+            "type" : "Database",
+            "date": "Dec 23, 2017"             
+        },
+        {
+            "filename": "database/db_engine.md",
+            "title": "Database Engine",
+            "type" : "Database",
             "date": "Dec 23, 2017"             
         },
         {
@@ -295,6 +337,18 @@
             "type" : "PHP",
             "date": "Dec 25, 2017"             
         },
+        {
+            "filename": "php/php_oop.md",
+            "title": "PHP OOP",
+            "type" : "PHP", 
+            "date": "Dec 25, 2017"             
+        },
+        {
+            "filename": "php/php_optimization.md",
+            "title": "PHP Optimization",
+            "type" : "PHP", 
+            "date": "Dec 25, 2017"             
+        },  
         {
             "filename": "js_basic/js_array_method.md",
             "title": "JavaScript Array Method",
@@ -416,6 +470,12 @@
             "date": "March 26, 2018"  
         },
         {
+            "filename": "others/asymmetric_encription.md",
+            "title": "Asymmetric Encription",
+            "type" : "Others",
+            "date": "March 26, 2018"  
+        },
+        {
             "filename": "react/react_basic.md",
             "title": "React基础",
             "type" : "React",
@@ -429,10 +489,15 @@
         },        
         {
             "filename": "others/vscode.md",
-            "title": "VSCode使用",
+            "title": "VSCode",
             "type" : "Others",
             "date": "April 2, 2018"  
+        },
+        {
+            "filename": "react/react_component.md",
+            "title": "React组件",
+            "type" : "React",
+            "date": "April 2, 2018"  
         }
-        
     ] 
 } 

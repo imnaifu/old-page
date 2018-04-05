@@ -10,10 +10,10 @@
 |DOUBLE(M,D)|8|display length(M), Number of decimals(D), default (16,4)|
 |DECIMAL(M,D)|8|display length(M), Number of decimals(D), default (10,0)|
 
-#### ZEROFILL
+## ZEROFILL
 `INT(3) ZEROFILL`  7 is displayed as 007.
 
-#### Difference between float and decimal
+## Difference between float and decimal
 - float/double represent approximate numeric data value
 - decimal store exact numeric data value
 - when doing comparision, float/double may be wrong

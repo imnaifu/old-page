@@ -9,6 +9,5 @@ Big-O | Name | Description
 **O(2^n)** | 指数级 | **超级慢**。这种算法你要想方设法避免，但有时候你就是没得选。加一点点数据就会把运行时间成倍的加长。例子：旅行商问题。
 **O(n!)** | 阶乘级 | **比蜗牛还慢**！不管干什么都要跑个 N 年才能得到结果。
 
-
-
-![i](https://apelbaum.files.wordpress.com/2011/10/yaacovapelbaumbigoplot.jpg)
+# Ref
+- [https://apelbaum.files.wordpress.com/2011/10/yaacovapelbaumbigoplot.jpg](https://apelbaum.files.wordpress.com/2011/10/yaacovapelbaumbigoplot.jpg)

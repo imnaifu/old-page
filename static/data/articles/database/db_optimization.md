@@ -1,5 +1,4 @@
-## Optimization advises
-### order
+# Optimization advises
 1. SQL
 2. Index
 3. Redis
