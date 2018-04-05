@@ -1,6 +1,4 @@
-## Database design principles
-
-### basic rules
+# basic rules
 1. no redundant
     - same data should not save twice in two different places
 2. must have unique primary key, cannot be null
@@ -12,7 +10,7 @@
     - second normal form (2NF)
     - third normal form(3NF)
 
-### design pattern
+# design pattern
 1. **one to one** 
     - basically not much usage, if too may column, can seperate to two tables
     - can use the original table to save the essential value, and the seperate table to save optional value
@@ -28,4 +26,6 @@
     - one teacher may teache many students, and one students may be teached be many teacher
     - so must have an teacher_student relation table which save the teacher__id and students__id
     - so you know that this student and teacher are connected
-[reference](https://www.ntu.edu.sg/home/ehchua/programming/sql/Relational_Database_Design.html)
+
+# Ref
+- [https://www.ntu.edu.sg/home/ehchua/programming/sql/Relational_Database_Design.html](https://www.ntu.edu.sg/home/ehchua/programming/sql/Relational_Database_Design.html)

@@ -1,5 +1,3 @@
-## Binary search tree Javascript implementation
-
 ```javascript
 
 function bst(root){

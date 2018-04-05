@@ -55,6 +55,30 @@
             "date": "2017-11-23"
         },
         {
+            "filename": "others/design_patterns.md",
+            "title": "Design Patterns",
+            "type" : "Others",
+            "date": "2017-11-23"
+        },
+        {
+            "filename": "algorithm/sorting_code.md",
+            "title": "Sorting algorithm JavaScript implementation",
+            "type" : "Others",
+            "date": "2017-11-23"
+        },
+        {
+            "filename": "algorithm/sorting_algorithm.md",
+            "title": "Sorting algorithm",
+            "type" : "Others",
+            "date": "2017-11-23"
+        },
+        {
+            "filename": "datastructure/bst_implementation.md",
+            "title": "Binary search tree Javascript implementation",
+            "type" : "Others",
+            "date": "2017-11-23"
+        },
+        {
             "filename": "vuejs/vue_basic.md",
             "title": "Vue Basic",
             "type" : "Vue",
@@ -248,6 +272,12 @@
             "date": "Dec 23, 2017"             
         },
         {
+            "filename": "database/db_design_principle.md",
+            "title": "Database Design Principles",
+            "type" : "Others",
+            "date": "Dec 23, 2017"             
+        },
+        {
             "filename": "front_end/flux.md",
             "title": "Flux",
             "type" : "Front-end",
@@ -256,6 +286,12 @@
         {
             "filename": "php/小总结.md",
             "title": "PHP 小总结",
+            "type" : "PHP",
+            "date": "Dec 25, 2017"             
+        },
+        {
+            "filename": "php/modern_php_note.md",
+            "title": "Modern PHP Notes",
             "type" : "PHP",
             "date": "Dec 25, 2017"             
         },
