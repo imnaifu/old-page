@@ -182,9 +182,15 @@
             "date": "Dec 18, 2017"             
         },
         {
-            "filename": "version_control/git.md",
+            "filename": "others/git.md",
             "title": "Git & Github",
-            "type" : "Version Control",
+            "type" : "Others",
+            "date": "Dec 23, 2017"             
+        },
+        {
+            "filename": "others/svn.md",
+            "title": "SVN",
+            "type" : "Others",
             "date": "Dec 23, 2017"             
         },
         {
