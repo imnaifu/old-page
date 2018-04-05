@@ -1,6 +1,60 @@
 { 
     "articles": [
         {
+            "filename": "system/basic_command.md",
+            "title": "Linux Basic Command",
+            "type" : "System",
+            "date": "2017-11-23"
+        },
+        {
+            "filename": "system/basic_knowledge.md",
+            "title": "System Knowledge",
+            "type" : "System",
+            "date": "2017-11-23"
+        },
+        {
+            "filename": "system/deadlock.md",
+            "title": "Dead Lock",
+            "type" : "System",
+            "date": "2017-11-23"
+        },
+        {
+            "filename": "system/file_system.md",
+            "title": "File System",
+            "type" : "System",
+            "date": "2017-11-23"
+        },
+        {
+            "filename": "system/linuex_network.md",
+            "title": "Linux Network",
+            "type" : "System",
+            "date": "2017-11-23"
+        },
+        {
+            "filename": "system/memory_management.md",
+            "title": "Memory Management",
+            "type" : "System",
+            "date": "2017-11-23"
+        },
+        {
+            "filename": "system/operating_system.md",
+            "title": "Operating System",
+            "type" : "System",
+            "date": "2017-11-23"
+        },
+        {
+            "filename": "system/process_thread.md",
+            "title": "Procee & Thread",
+            "type" : "System",
+            "date": "2017-11-23"
+        },        
+        {
+            "filename": "system/symbolic_link.md",
+            "title": "Symbolic Link",
+            "type" : "System",
+            "date": "2017-11-23"
+        },
+        {
             "filename": "vuejs/vue_basic.md",
             "title": "Vue Basic",
             "type" : "Vue",

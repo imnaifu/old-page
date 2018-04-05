@@ -1,4 +1,4 @@
-### Sublime Instructions
+# Sublime Manual
 
 - **muiltiple change:**
     - select some text then use ctrl + D to add more 

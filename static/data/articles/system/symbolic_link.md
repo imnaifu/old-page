@@ -1,23 +1,19 @@
-## inode
+# inode
 - every file in linux system has a inode, which contains the information of file
 - [ref](http://www.ruanyifeng.com/blog/2011/12/inode.html)
 
-### both
+# both
 - when edit the linked file, the original file will change 
 - but delete the linkded file will not delete the original file
 
-### link (hard link)
+# link (hard link)
 - `ln exist_file new_file`
 - not allow to link directory
 - only allow create link for the same file system
 - 硬链接的作用是允许一个文件拥有多个有效路径名，这样用户就可以建立硬链接到重要文件，起到防止“误删”的功能
 
-### symbolic link  
+# symbolic link  
 - `ln -s exist_file linked_file`
-
-
-
-### general
 - 符号链接（symbolic link）在建立的时候建立了一个新的inode，并记录了指向源文件inode的路径。所以symbolic的inode number跟
 原始档案的inode number是不一样的。这也是为什么symbolic link能够跨越不同文件系统的原因。符号链接建立了新的inode number，
 所以它是一个真实的文件并占有一定的磁盘空间。另外对symbolic link的操作除了删除都会直接对源文件进行操作。
@@ -27,4 +23,5 @@
 只有指向同一inode的文件名都删除后，inode才释放。hard link实际上是不占空间的。
 
 
-- [reference](http://blog.csdn.net/niluchen/article/details/8049304)
+# Ref
+- [http://blog.csdn.net/niluchen/article/details/8049304](http://blog.csdn.net/niluchen/article/details/8049304)

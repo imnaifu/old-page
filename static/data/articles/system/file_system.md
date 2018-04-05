@@ -7,14 +7,14 @@
 2. data remains when the process ends
 3. data can be accessed by multiple process concurrently
 
-### 命名
+# 命名
 - Linux 区分大小写, Window不区分大小写
 
-### File Extension
+# File Extension
 - linux just use it as an aggrement, not forceable
 - Windows need to register.
 
-### linux file type
+# linux file type
 - character special file(字符特殊文件)
 - block special file(块特殊文件)
 - regular file
@@ -25,12 +25,11 @@
         - 有特殊的内部结构
         - 只能被特殊的程序识别
         
-### file path
+# file path
 - absolute path
 - relative path
 
-
-### i-node(index-node)
+# i-node(index-node)
 - file system has 3 parts
     1. 超级块： 存放文件系统本身信息
     2. i Node table: file attribute

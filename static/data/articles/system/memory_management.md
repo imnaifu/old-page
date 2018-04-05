@@ -1,4 +1,4 @@
- ## Memory Management
+ # Memory Management
  - 有效的管理内存，记录哪些内存是正在使用的，哪些是空闲的；
  - 在进程需要时为其分配内存，进程使用完后释放内存
  
@@ -23,4 +23,6 @@
     - if not found the mapping relation, call a interupt called 'page fault' 
     - then find the least used page, put it to disk, and retrieve the needed page from disk, add relation to map table
     - controlled by Memory Management Unit (MMU)
-    - [virtual memorey](http://www.cnblogs.com/curtful/archive/2012/02/16/2354496.html)
+   
+ # Ref  
+- [http://www.cnblogs.com/curtful/archive/2012/02/16/2354496.html](http://www.cnblogs.com/curtful/archive/2012/02/16/2354496.html)

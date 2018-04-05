@@ -1,8 +1,7 @@
-### POSIX (portable operating system interface)
+# POSIX (portable operating system interface)
 - Linux software standard
 
-
-### Redirect 
+# Redirect 
 - '<' redirect input
 - '>' redirect output 
 - ` command1 > file1 ` : instead of displaying the output at the terminal, output it to a file
@@ -11,11 +10,11 @@
 - '<<<' input from a string 
 
 
-### Piping (管道) => ' | '
+# Piping (管道) => ' | '
 - uss the output of one command as the input of second command, can be many
 - ` command1 | command2 ` 
 
-### file handles
+# file handles
 | Handle | Name | Description |
 | ------ | ---  | ----        |
 | 0      | stdin| Standard Input |
@@ -28,22 +27,21 @@
 'cat file 2>1' vs 'cat file 2>&1'. In the first case, stderr is redirected to a file named '1' and in the second,
 stderr is redirected to stdout.
 
-### shell
+# shell
 - shell is just normal program
 - get input from keyboard 
 - put output to monitor 
 - excute other program
 
-### Process in Linux
+# Process in Linux
 - 活动实体是进程
 - 每个进程执行一段独立的程序并且在进程初始化的时候拥有一个独立的控制线程
 - 每个进程拥有一个独立的程序计数器，用来追踪下一个将要被执行的指令
 - 每个进程都有个地址空间，逻辑上有三段组成：代码、数据和堆栈段
 
 
-
-### Network in Linux
-#### Socket
+# Network in Linux
+# Socket
 - 像邮筒使用户连接到邮政系统，电话插头使用户连接电话系统
 - Socket使用户加入网络系统
 - 创建socket
@@ -57,7 +55,7 @@ stderr is redirected to stdout.
     - 不需要时，可以通过close系统调用来关闭
     
     
-### File system in Linux
+# File system in Linux
 - file system has 3 tables
     - 文件描述符表
     - 打开文件描述符表

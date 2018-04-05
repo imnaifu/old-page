@@ -1,5 +1,4 @@
-## Process & Thread (进程和线程)
-- Process is like the abstraction of CPU
+# Process is like the abstraction of CPU
     - so that as a programmer, we don't need to know the detail of CPU
     - it's a instance of program including Program Counter(PC), Register and current value of variable
     - 3 status of porcess
@@ -7,17 +6,17 @@
         - ready (a pause to wait for other process to finish)
         - stop (wait for some thing to wake)
         
-- Thread is inside process
+# Thread is inside process
     - one porcess can have mutiple thread
     - in which they share memory and much easier to communicate with each other 
     - faster and lighter than process
     - 进程用于把资源集中到一起，线程是CPU调度的实体
     
-- Process table
+# Process table
     - used to save information of the porcess 
     - UID (User IDentification), is the process id
 
-- Scheduling
+# Scheduling
     - Both process and thread are under control by a scheduling programm
     - process is called by system, thread is controlled by user
     - compute-bound (计算密集型) || I/O bound (I/O密集型)
@@ -29,8 +28,7 @@
     - 哲学家就餐问题
     - 读者-写者问题
         
-
-- Interprocess Communacation
+# Interprocess Communacation
     - race condition
     - critical section (临界区)
     - mutual exclusion (互斥)
