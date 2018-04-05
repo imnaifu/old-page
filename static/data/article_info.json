@@ -25,7 +25,7 @@
             "date": "2017-11-23"
         },
         {
-            "filename": "system/linuex_network.md",
+            "filename": "system/linux_network.md",
             "title": "Linux Network",
             "type" : "System",
             "date": "2017-11-23"
@@ -248,9 +248,9 @@
             "date": "Dec 23, 2017"             
         },
         {
-            "filename": "react/flux.md",
+            "filename": "front_end/flux.md",
             "title": "Flux",
-            "type" : "React",
+            "type" : "Front-end",
             "date": "Dec 23, 2017"             
         },
         {
