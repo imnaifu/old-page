@@ -38,6 +38,35 @@ function abc(){}
 ![](prototypeChain.png) 
 可以看出，原型链实际上是由**.\_\_proto\_\_**属性连接而成的一条链。在JS里面任何一个object都会有一个**\_\_proto\_\_**属性，所以任何一个object实际上都在链上。 
 
+# 原型链带来的继承
+原型链本身是JS很本质的东西，相当于是底层的设计，作为原理是要理解的，另外，它还可以拿来实现OOP的继承机制。
+如果要实现一个Rabbit继承Animal，那么只需要将Rabbit的原型指向Animal。
+```javascript
+//当我们新建一个Object
+let rabbit = {};
+//是存在这么一条原型链的 rabbit -> object.prototype -> null
+//也就是rabbit.__proto__ = object.prototype
+
+//如果我们要实现rabbit继承animal
+let animal = {};
+//animal -> object.prototype -> null
+
+rabbit.__proto__ = animal;
+//这样就拼成了一条新的原型链，实现了继承
+//rabbit -> animal -> object.prototype -> null
+```
+
+上面只是理论情况，实际的继承如下
+```javascript
+function Animal(){};
+function Rabbit(){};
+Rabbit.prototype = new Animal(); //设置继承原型链
+
+//这里Rabbit.prototype.constructor指向的还是Animal，需要设置成Rabbit
+Rabbit.prototype.constructor = Rabbit;
+```
+
+
 # 什么是new
 new是一个操作符，但new比起操作符，更像是一个函数，它的输入变量是一个函数（也就是所谓的构造函数），return一个Object对象的实例。
 当你使用new的时候，实际上发生了这些：
@@ -81,3 +110,8 @@ retrun obj;
 - [https://github.com/creeperyang/blog/issues/9](https://github.com/creeperyang/blog/issues/9)
 - [https://stackoverflow.com/questions/1646698/what-is-the-new-keyword-in-javascript](https://stackoverflow.com/questions/1646698/what-is-the-new-keyword-in-javascript)
 - [http://javascript.info/constructor-new](http://javascript.info/constructor-new)
+- [https://zhuanlan.zhihu.com/p/22787302](https://zhuanlan.zhihu.com/p/22787302)
+- [https://github.com/mqyqingfeng/Blog/issues/16](https://github.com/mqyqingfeng/Blog/issues/16)
+- [https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+- [https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Objects/Inheritance](https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/Objects/Inheritance)
+- [http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html](http://www.ruanyifeng.com/blog/2011/06/designing_ideas_of_inheritance_mechanism_in_javascript.html)

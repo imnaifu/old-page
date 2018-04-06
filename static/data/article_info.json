@@ -157,14 +157,8 @@
             "date": "2017-12-01"
         },
         {
-           "filename": "js_basic/prototype_chain.md",
-            "title": "原型链与继承",
-            "type" : "JavaScript Basic",
-            "date": "2017-12-01"
-        },
-        {
            "filename": "js_basic/prototype_constructor_instance.md",
-            "title": "原型，实例，构造函数",
+            "title": "原型链，实例，构造函数，继承",
             "type" : "JavaScript Basic",
             "date": "2017-12-01"
         },

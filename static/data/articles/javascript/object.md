@@ -217,6 +217,11 @@ var jsObject = JSON.parse(json_text, function);
 - encodeURI(), encodeURIComponent() 
 - decodeURI(), decodeURIComponent()
 
+# null和undefied有什么差别
+这里不讲他们具体用法的差别，就说为什么设计出这两个。
+- **null**所表达的含义是，**此处不应该有值**，所以Object的原型是null，因为不应该存在。
+- **undefined**表示，**此处应该有值，但是这个值现在不存在**，等待赋值。
+
 # Ref 
 - [https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects)
 - [https://www.ibm.com/developerworks/cn/web/wa-objectsinjs-v1b/index.html](https://www.ibm.com/developerworks/cn/web/wa-objectsinjs-v1b/index.html)
