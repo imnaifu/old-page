@@ -66,49 +66,10 @@ Rabbit.prototype = new Animal(); //设置继承原型链
 Rabbit.prototype.constructor = Rabbit;
 ```
 
-
-# 什么是new
-new是一个操作符，但new比起操作符，更像是一个函数，它的输入变量是一个函数（也就是所谓的构造函数），return一个Object对象的实例。
-当你使用new的时候，实际上发生了这些：
-1. 创建了一个新的对象
-2. 将该对象的原型(\_\_proto\_\_)设为构造函数的prototype
-3. 将this指向新的对象
-4. 执行函数体
-4. 返回创建对象（如果构造函数没有返回其他的情况下）
-
-```javascript
-//我们有个构造函数
-function Human(){
-    this.name = 'Jen',
-    this.age = 20
-}
-
-//如果我们直接call
-Human(); //相当于window.Human()
-
-//于是Human里面的this指向window变量
-name; //Jen
-
-//如果我们call by new operator
-let me = new Human()；
-
-//相当于
-//1. 创建新对象 
-let obj = {}
-//2. 对象原型指向构造函数的prototype
-obj.__proto__ = Human.prototype
-//3. 将this指向新对象
-this = obj;
-//4. 执行函数
-//5. 返回新对象
-retrun obj;
-```
-
 # Ref
 - [https://codeburst.io/javascript-for-beginners-the-new-operator-cee35beb669e](https://codeburst.io/javascript-for-beginners-the-new-operator-cee35beb669e)
 - [https://github.com/mqyqingfeng/Blog/issues/48](https://github.com/mqyqingfeng/Blog/issues/48)
 - [https://github.com/creeperyang/blog/issues/9](https://github.com/creeperyang/blog/issues/9)
-- [https://stackoverflow.com/questions/1646698/what-is-the-new-keyword-in-javascript](https://stackoverflow.com/questions/1646698/what-is-the-new-keyword-in-javascript)
 - [http://javascript.info/constructor-new](http://javascript.info/constructor-new)
 - [https://zhuanlan.zhihu.com/p/22787302](https://zhuanlan.zhihu.com/p/22787302)
 - [https://github.com/mqyqingfeng/Blog/issues/16](https://github.com/mqyqingfeng/Blog/issues/16)

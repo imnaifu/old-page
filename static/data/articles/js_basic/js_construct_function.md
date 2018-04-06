@@ -31,7 +31,7 @@ a.height //200
 b.height //200
 ```
 
-In all, 构造函数里面存放独立的属性和方法，prototype属性（指向对象）里面存放共有的属性和方法  
+In all, 构造函数里面存放独立的属性和方法，prototype属性（指向一个对象）里面存放共有的属性和方法  
 从外面看，prototype就像是实例对象的原型，实例对象就好像继承了prototype对象一样  
 上述为标准的创建自定义类型的方法，即构造函数加原型，将独立变量与方法定义在构造函数，共有变量与方法定义在原型  
 或者可将原型封装进构造函数
@@ -62,3 +62,42 @@ console.log(a.c); //undefined
 console.log(a.get()); //'123'
 ```
 
+# 究竟什么是new
+new是一个操作符，但new比起操作符，更像是一个函数，它的输入变量是一个函数（也就是所谓的构造函数），return一个Object对象的实例。
+当你使用new的时候，实际上发生了这些：
+1. 创建了一个新的对象
+2. 将该对象的原型(\_\_proto\_\_)设为构造函数的prototype
+3. 将this指向新的对象
+4. 执行函数体
+4. 返回创建对象（如果构造函数没有返回其他的情况下）
+
+```javascript
+//我们有个构造函数
+function Human(){
+    this.name = 'Jen',
+    this.age = 20
+}
+
+//如果我们直接call
+Human(); //相当于window.Human()
+
+//于是Human里面的this指向window变量
+name; //Jen
+
+//如果我们call by new operator
+let me = new Human()；
+
+//相当于
+//1. 创建新对象 
+let obj = {}
+//2. 对象原型指向构造函数的prototype
+obj.__proto__ = Human.prototype
+//3. 将this指向新对象
+this = obj;
+//4. 执行函数
+//5. 返回新对象
+retrun obj;
+```
+
+# Ref
+- [https://stackoverflow.com/questions/1646698/what-is-the-new-keyword-in-javascript](https://stackoverflow.com/questions/1646698/what-is-the-new-keyword-in-javascript)
