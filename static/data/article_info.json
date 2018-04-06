@@ -103,8 +103,8 @@
             "date": "2017-11-23"
         },     
         {
-            "filename": "javascript/js_often_used.md",
-            "title": "JavaScript常用方法",
+            "filename": "javascript/object.md",
+            "title": "JavaScript对象",
             "type" : "JavaScript",
             "date": "2017-11-23"
         },

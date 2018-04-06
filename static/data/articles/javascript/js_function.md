@@ -7,7 +7,7 @@
     - declaration 的话，就是名字
     - expression 的话，就是变量的名字
         - 但其实匿名函数也是可以命名的
-```
+```javascript
 let a = function func(str){
     func(str); //recursive call
 };
@@ -15,7 +15,7 @@ let a = function func(str){
 - length
     - 函数参数的个数，不过...（rest parameter）并不算
 
-## Function 类型
+# Function 类型
 - 函数是对象，每个函数都是Function类型的实例
 - 和其他引用类型一样有属性和方法
 - 函数名仅仅是指向对象的指针
@@ -28,23 +28,22 @@ let a = function func(str){
         - 引用的是函数执行的环境对象
         - 当在global调用的时候，指向window对象
 
-## 函数属性&方法
+# 函数属性&方法
 - length: 希望接受的命名参数的个数
 - prototype: 
-## 两种方法定义函数
+
+# 两种方法定义函数
 1. 函数声明 
     - function abc(){}
     - function declaration hoisting (函数声明提升)：执行代码前会先读取函数声明
 2. 函数表达式 
-    - var abc = function(){};
-
+    - var abc = function(){};  
 argument.callee： 指向正在执行的函数的指针，用以实现递归
 
-
-## js函数参数
+# js函数参数
 - js的参数在内部是通过一个数组表示的，函数接收的永远是那个数组，可以通过arguments对象访问
 
-```
+```javascript
 function f(a, b){
     console.log(arguments);    
 }
@@ -56,21 +55,21 @@ f(3,4);
 
 ```
 
-## expression context(表达式上下文)： e.g 变量定义
-## statement context(语句上下文): e.g if 语句
+# 两个概念
+- expression context(表达式上下文)： e.g 变量定义
+- statement context(语句上下文): e.g if 语句
 
-
-## 词法(lexical)作用域(静态作用域)
+# 词法(lexical)作用域(静态作用域)
 - 定义时确定，而不是在运行时确定的
 - JS函数是在定义环境运行，而不是在执行环境运行
 - 关注函数在何处声明
 
-## 动态作用域
+# 动态作用域
 - 运行时确定的
 - 关注函数在何处运行
 - ref: http://www.jianshu.com/p/70b38c7ab69c
 
-## JS闭包，
+# JS闭包(closure)
 - 函数嵌套函数，外层函数更像是一个class或者工厂，输入数据，返回根据这个数据定制的(customize)函数
 
 正常来讲因为scope chain，内部能访问到外部变量，比如函数内部可以访问到global变量
