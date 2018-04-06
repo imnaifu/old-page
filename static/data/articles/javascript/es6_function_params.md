@@ -6,12 +6,12 @@ function makePerson(name, age, gender, height, weight){
 }
 
 // if we only have name, height and weight
-makePerson('Zack', undifined, undefined, 180, 70);
+makePerson('Zack', undefined, undefined, 180, 70);
 ```
 很麻烦有木有，这不是重点，重点是还要记住传入的顺序，记你妹哦。
 但是现在有了destruct，这一切都阔以解决！
 
-# Destruct
+# Destruct(解构)
 Destruct可以适用于两种类型，Array和Object，当然array属于object，但用法有一点小区别
 
 ## Array Destruct
@@ -38,7 +38,7 @@ let user = {};
 //any 'assignable' can be used at left
 ```
 
-# Rest Parameters
+# Rest Parameters(剩余参数)
 这里要插入一个知识点，rest parameter，语法是'...name'
 用法是将没有指定个数的变量保存成一个数组，比如我们要做一个可以接受任意个参数的求和函数
 
@@ -47,7 +47,7 @@ function sum(...args){
 	// args = [1, 2, 3]
 	return args.reduce((sum, current) => {
 			return sum + current;
-		})
+		});
 }
 sum(1,2,3)； 
 ```
@@ -69,7 +69,6 @@ let {a, ...others} = obj;
 console.log(a); //1
 console.log(others); //{b:2, c:3, d:4}
 ```
-
 
 
 # Object destruct

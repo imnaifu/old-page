@@ -49,7 +49,7 @@ function Person(name){
 ```
 
 构造函数里的var变量实际上是访问不到的，定义的函数也是，都算是private，只有this.xxx才能够被外部访问，因此可以提供一个可供外部访问的接口函数
-```
+```javascript
 function cc(name){
     let c = '123';
     this.get = function (){

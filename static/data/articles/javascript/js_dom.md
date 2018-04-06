@@ -1,11 +1,11 @@
 # JS操作DOM的API
 
-## node节点类型
+# node节点类型
 - 1 -> element 元素节点
 - 2 -> attribute 特性节点
 - 3 -> text 文本节点
 
-## document 类型
+# document 类型
 - 表示整个HTML页面
 - document对象是window对象的一个属性
 - nodeType = 9
@@ -16,7 +16,7 @@
 		- 只能设置同一个域的域名
 	- referrer: 来源页面
 
-## element 类型
+# element 类型
 - nodeType = 1
 - nodeName = tagName
 - nodeValue = null
@@ -33,7 +33,7 @@
 - 还是建议通过设置property来改变attribute
 - HTML5标准，自定义attribute应该用'data-'
 
-## text 类型
+# text 类型
 - nodeType = 3
 - nodeName = '#text'
 - nodeValue
@@ -44,7 +44,7 @@
     - element.normalize(): 合并文本节点
     - splitText(): 分割文本节点
 
-## comment 类型
+# comment 类型
 - nodeType = 8
 - nodeName = '#comment'
 - nodeValue -> 注释的内容
@@ -52,14 +52,9 @@
 - childNode -> not support
 - 与text类型继承相同的基类
 
-## CDATASection 类型(XML only)
-- nodeType = 4
-- nodeName = '#cdata-section'
-- nodeValue -> content
-
-## documentType 类型
-## documentFragment 类型
-## attr 类型 (不建议直接操作)
+# documentType 类型
+# documentFragment 类型
+# attr 类型 (不建议直接操作)
 - nodeType = 11
 - nodeName = attr name
 - nodeValue = attr value
@@ -72,8 +67,7 @@
 - document.querySelector('#div');
 - document.querySelectorAll('.div');
 
-
-## HTML5 new
+# HTML5 new
 - document.getEelementSByClassName()
 - classList
     - classList.add()
@@ -82,7 +76,7 @@
     - classList.toggle()
 
 
-## DOM性能
+# DOM性能
 - 现场更新使用文档碎片一次性加入
 - use innerHTML instead of createElement/appendChild
 - 事件代理，任何冒泡的事件都不仅仅可以在时间目标上进行处理，任何祖先节点也能处理

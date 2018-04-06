@@ -1,48 +1,83 @@
-## 唉一切的一切得起源只是我想看懂箭头函数
-结果就看懂this,要看懂this就要懂scope，为了懂scope就要懂原型链，为了原型链就到了这里。。。。
-唉，都是泪啊
+# 来从头来，什么是原型（Prototype）
+JS语言规定，每个object都有一个隐藏的property -> **[[prototype]]**，它的值为null或者是另一个object。
+而“另一个object”就是我们的原型，所以原型都是对象，叫其原型对象比较好理解。
 
-## 刚看到消息，我的半马竟然是在凌晨四点半开跑，我勒个去去啊T_T
-伤心欲绝的我继续回来讲
+# 什么是构造函数（constructor）
+这里的构造函数并不是Class里面的构造函数，每一个函数被创建的时候，都会有一个**prototype**属性（这里prototype仅仅只是个属性而已，并不指的是原型），
+prototype属性指向一个object，默认情况下，这个object只有一个属性 -> **constructor**，这个属性指回这个函数本身。
+```javascript
+function Rabbit() {} //这是一个构造函数，它有个原型Rabbit.prototype
 
-## 今天的重点是！！原型的水平关系
-之前我们讲了原型链，也就是原型之间的垂直关系，这次是水平关系。
-也就是原型，实例和构造函数。  
+Rabbit.prototype; //{constructor: f} f指向Rabbit函数
+
+let rabbit = new Rabbit(); //这是一个实例
+
+rabbit.__proto__ === Rabbit.prototype //true，实例的原型指向构造函数的prototype属性 
+
+rabbit.constructor === Rabbit; //true
+//rabbit.constructor来自于rabbit.__proto__.constructor
+```
+
+# 它们之间的关系
 简单来说：
-- 实例的'\_\_proto\_\_' ---> 原型
-- 构造函数的prototype ---> 原型
-- 原型的constructor ---> 构造函数
-- new构造函数 ---> 实例
-好吧，一点也不简单，具体看下面这张图(盗图的)
-![](prototype.png)
+- 实例的**.\_\_proto\_\_** ---> 原型
+- 构造函数的**.prototype**属性 ---> 原型
+- 原型对象的**.constructor**属性 ---> 构造函数
+- 构造函数 ---> 实例
+![](prototype.png) 
 
-# 玛德让我们来讲讲什么是new
-别的语言都是new一个class来生成一个属于这个class的对象，JS又是不走寻常路，new特么的一个function！唉。
-Anyway,不能像理解其他语言的new一样来理解JS的new。
+# 放大至整个原型链
+网上一堆乱七八糟的，找半天也没找到一张合适的，索性自己画一张。
+```javascript
+//当我们创建一个object，一个函数和一个数值变量，会得到下面的三条原型链
+let obj = {};
+let num = 1;
+function abc(){}
+```
 
-## new 更像是一个函数
-new比起操作符，更像是一个函数，它的输入变量是一个函数（也就是所谓的构造函数），return一个Object对象的实例。
+![](prototypeChain.png) 
+可以看出，原型链实际上是由**.\_\_proto\_\_**属性连接而成的一条链。在JS里面任何一个object都会有一个**\_\_proto\_\_**属性，所以任何一个object实际上都在链上。 
+
+# 什么是new
+new是一个操作符，但new比起操作符，更像是一个函数，它的输入变量是一个函数（也就是所谓的构造函数），return一个Object对象的实例。
 当你使用new的时候，实际上发生了这些：
 1. 创建了一个新的对象
-2. 将该对象的原型设为构造函数的prototype
+2. 将该对象的原型(\_\_proto\_\_)设为构造函数的prototype
 3. 将this指向新的对象
-4. 返回对象（如果构造函数没有返回其他的情况下）
+4. 执行函数体
+4. 返回创建对象（如果构造函数没有返回其他的情况下）
 
-```
-//如果new是一个函数
-function new(constructorFunc){
-    let obj = {}; //创建一个对象
-
-    //将返回对象原型设为构造函数的prototype    
-    Object.setPrototypeOf(obj, constructorFunc.prototype); 
-
-    //下面这行还没看懂，暂时先留着
-    return Constructor.apply(obj, args) || obj;  // 执行函数，改变 this 指向新的对象
+```javascript
+//我们有个构造函数
+function Human(){
+    this.name = 'Jen',
+    this.age = 20
 }
+
+//如果我们直接call
+Human(); //相当于window.Human()
+
+//于是Human里面的this指向window变量
+name; //Jen
+
+//如果我们call by new operator
+let me = new Human()；
+
+//相当于
+//1. 创建新对象 
+let obj = {}
+//2. 对象原型指向构造函数的prototype
+obj.__proto__ = Human.prototype
+//3. 将this指向新对象
+this = obj;
+//4. 执行函数
+//5. 返回新对象
+retrun obj;
 ```
 
-所以说无论是构造函数还是实例，指向的都是原型。
-
-
-## reference
+# Ref
+- [https://codeburst.io/javascript-for-beginners-the-new-operator-cee35beb669e](https://codeburst.io/javascript-for-beginners-the-new-operator-cee35beb669e)
 - [https://github.com/mqyqingfeng/Blog/issues/48](https://github.com/mqyqingfeng/Blog/issues/48)
+- [https://github.com/creeperyang/blog/issues/9](https://github.com/creeperyang/blog/issues/9)
+- [https://stackoverflow.com/questions/1646698/what-is-the-new-keyword-in-javascript](https://stackoverflow.com/questions/1646698/what-is-the-new-keyword-in-javascript)
+- [http://javascript.info/constructor-new](http://javascript.info/constructor-new)
