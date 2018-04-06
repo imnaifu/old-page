@@ -134,7 +134,7 @@
         },
         {
             "filename": "js_basic/js_this.md",
-            "title": "JS 'this'",
+            "title": "'this' in JavaScript",
             "type" : "JavaScript Basic",
             "date": "2017-11-23"
         },

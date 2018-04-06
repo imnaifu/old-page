@@ -1,4 +1,4 @@
-对于一般的语言来讲，使用new来创建一个class的实例，实际上是call的class的构造方法(construct function)  
+对于一般的语言来讲，使用new来创建一个class的实例，实际上是call的class的构造方法(construct function)。
 而js并没有class，于是设计者便采用直接new构造函数来创建实例，实际上是一样的
 
 ```javascript
@@ -18,8 +18,7 @@ a.gender = 'male';
 b.gender // still 'female';
 ```
 
-因此便发明了一个prototype属性
-prototype里面存放共有的属性和方法
+因此便发明了一个prototype属性，prototype里面存放共有的属性和方法
 
 ```javascript
 Person.prototype = {

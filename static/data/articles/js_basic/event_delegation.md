@@ -1,13 +1,12 @@
+# 事件
 来来来，今天我们讲讲事件的触发和传播过程。DOM里面事件的传播主要有三个阶段。
-1. Capturing phase – the event goes down to the element.
-2. Target phase – the event reached the target element. (can just ignore)
-3. Bubbling phase – the event bubbles up from the element.
+1. 捕获阶段 Capturing phase – the event goes down to the element.
+2. 目标阶段 Target phase – the event reached the target element. (can just ignore)
+3. 冒泡阶段 Bubbling phase – the event bubbles up from the element.
 
 捕获阶段是从外到内的，从html元素开始，到body，一直到事件触发的最内层元素。
-冒泡指的是从内到外，从子到父。
-Normally，我们用不到1和2。
+冒泡指的是从内到外，从子到父。一般来讲，我们只用冒泡就够了
 ![](event_flow.png)
-
 
 # Event Bubbling
 DOM的事件冒泡机制指的是事件的冒泡是从the most deeply nest element开始，一直父元素传播的过程。
@@ -18,8 +17,8 @@ DOM的事件冒泡机制指的是事件的冒泡是从the most deeply nest eleme
 有一些函数和变量是和这个有关的。
 
 ## event.target & event.currentTarget
-`event.target` 可以让你拿到最底层的DOM元素，
-`event.currentTarget` 返回的是当前的元素，也就是this
+-  **event.target**：可以让你拿到最底层的DOM元素，
+- **event.currentTarget**： 返回的是当前的元素，也就是this
 
 ```javascript
 <div id='a'>
@@ -43,8 +42,8 @@ document.addEventListener('.class', function_name);
 
 // 如果想要事件在capturing的时候触发
 document.addEventListener('.class', function_name, {
-	capture: ture, // 在capture触发
-	//once: true // !important if set true, it will unbind like removeEventListener (no more event triggered)
+	capture: ture, //在capture触发
+	//once: true //if this set true, it will unbind like removeEventListener (no more event triggered)
 });
 
 // 或者
@@ -53,10 +52,10 @@ document.addEventListener('.class', function_name, true);
 ```
 
 ## event.stopPropagation()
-这个函数是用来阻止冒泡的，在一个event handler里面call这个function，所有的父元素便不会再接收到event。
+这个函数是用来**阻止冒泡**的，在一个event handler里面call这个function，所有的父元素便不会再接收到event。
 
 
-# Reference
+# Ref
 - [https://javascript.info/bubbling-and-capturing](https://javascript.info/bubbling-and-capturing)
 - [https://javascript.info/event-delegation](https://javascript.info/event-delegation)
 - [https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/addEventListener](https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/addEventListener)

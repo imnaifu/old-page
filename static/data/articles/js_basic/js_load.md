@@ -28,6 +28,8 @@ defer & async
     - download the file during HTML parsing
     - execute after the parser completed
     - execute by order 
-- ref: http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html
+
+# Ref
+- [http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html](http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
 
 

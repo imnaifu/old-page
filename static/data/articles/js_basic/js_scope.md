@@ -1,4 +1,4 @@
-## 简单介绍下作用域(scope)
+# 简单介绍下作用域(scope)
 具体在函数执行会再说。
 JS有一个全局作用域(global excution context)，或者叫上下文，
 在浏览器环境这个全局等同于window对象
