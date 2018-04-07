@@ -103,39 +103,33 @@
             "date": "2017-11-23"
         },     
         {
-            "filename": "javascript/object.md",
+            "filename": "js_usage/object.md",
             "title": "JavaScript对象",
             "type" : "JavaScript",
             "date": "2017-11-23"
         },
         {
-            "filename": "javascript/es6.md",
+            "filename": "js_usage/es6.md",
             "title": "ECMAScript 6 syntax",
             "type" : "JavaScript",
             "date": "2017-11-23"
         },
         {
-            "filename": "js_basic/js_primitive.md",
+            "filename": "js_concept/js_primitive.md",
             "title": "JS Primitive",
-            "type" : "JavaScript Basic",
+            "type" : "Javascript Concept",
             "date": "2017-11-23"
         },
         {
-            "filename": "js_basic/js_construct_function.md",
+            "filename": "js_concept/js_construct_function.md",
             "title": "构造函数，new",
-            "type" : "JavaScript Basic",
+            "type" : "Javascript Concept",
             "date": "2017-11-23"
         },
         {
-            "filename": "js_basic/js_scope.md",
-            "title": "JS Scope",
-            "type" : "JavaScript Basic",
-            "date": "2017-11-23"
-        },
-        {
-            "filename": "js_basic/js_this.md",
+            "filename": "js_concept/js_this.md",
             "title": "'this' in JavaScript",
-            "type" : "JavaScript Basic",
+            "type" : "Javascript Concept",
             "date": "2017-11-23"
         },
         {
@@ -145,39 +139,39 @@
             "date": "2017-11-23"
         },
         {
-           "filename": "js_basic/event_loop.md",
+           "filename": "js_concept/event_loop.md",
             "title": "Event Loop",
-            "type" : "JavaScript Basic",
+            "type" : "Javascript Concept",
             "date": "2017-11-29"
         },
         {
-           "filename": "js_basic/hoisting.md",
+           "filename": "js_concept/hoisting.md",
             "title": "JavaScript Hoisting",
-            "type" : "JavaScript Basic",
+            "type" : "Javascript Concept",
             "date": "2017-12-01"
         },
         {
-           "filename": "js_basic/prototype_constructor_instance.md",
+           "filename": "js_concept/prototype_constructor_instance.md",
             "title": "原型链，实例，构造函数，继承",
-            "type" : "JavaScript Basic",
+            "type" : "Javascript Concept",
             "date": "2017-12-01"
         },
         {
-           "filename": "js_basic/js_execution.md",
+           "filename": "js_concept/js_execution.md",
             "title": "JavsScript 执行",
-            "type" : "JavaScript Basic",
+            "type" : "Javascript Concept",
             "date": "2017-12-01"
         },
         {
-            "filename": "javascript/apply_call.md",
+            "filename": "js_usage/apply_call.md",
             "title": "Apply & Call",
             "type" : "JavaScript",
             "date": "2017-12-04"
         },
         {
-            "filename": "js_basic/js_closure.md",
+            "filename": "js_concept/js_closure.md",
             "title": "JavaScript 闭包",
-            "type" : "JavaScript Basic",
+            "type" : "Javascript Concept",
             "date": "2017-12-04"
         },
         {
@@ -343,9 +337,9 @@
             "date": "Dec 25, 2017"             
         },  
         {
-            "filename": "js_basic/js_array_method.md",
+            "filename": "js_usage/js_array_method.md",
             "title": "JavaScript Array Method",
-            "type" : "JavaScript Basic",
+            "type" : "JavaScript",
             "date": "Dec 28, 2017"             
         },
         {
@@ -367,7 +361,7 @@
             "date": "Dec 29, 2017"             
         },
         {
-            "filename": "js_basic/copy.md",
+            "filename": "js_concept/copy.md",
             "title": "Make a copy",
             "type" : "JavaScript",
             "date": "Dec 31, 2017"             
@@ -379,9 +373,9 @@
             "date": "Jan 2, 2018"             
         },
         {
-            "filename": "js_basic/event_delegation.md",
+            "filename": "js_concept/event_delegation.md",
             "title": "Event Delegation",
-            "type" : "JavaScript Basic",
+            "type" : "Javascript Concept",
             "date": "Jan 7, 2018"             
         },                  
         {
@@ -397,13 +391,13 @@
             "date": "Jan 4, 2018"             
         },
         {
-            "filename": "javascript/es6_function_params.md",
+            "filename": "js_usage/es6_function_params.md",
             "title": "ES6 function parameters/desstruct/rest",
             "type" : "JavaScript",
             "date": "Jan 14, 2018"              
         },                 
         {
-            "filename": "javascript/callback&promise.md",
+            "filename": "js_usage/callback&promise.md",
             "title": "Callback & Promise",
             "type" : "JavaScript",
             "date": "Feb 4, 2018"              
@@ -439,9 +433,9 @@
             "date": "March 20, 2018"  
         },
         {
-            "filename": "js_basic/property_descriptor.md",
+            "filename": "js_concept/property_descriptor.md",
             "title": "Property descriptor and flag",
-            "type" : "JavaScript Basic",
+            "type" : "Javascript Concept",
             "date": "March 21, 2018"  
         },
         {
@@ -469,7 +463,7 @@
             "date": "March 28, 2018"  
         },
         {
-            "filename": "javascript/es6_module.md",
+            "filename": "js_usage/es6_module.md",
             "title": "ES6模块化",
             "type" : "JavaScript",
             "date": "March 29, 2018"  
