@@ -1,7 +1,3 @@
-# 来来来，教你一些git的基本用法
-唉，头昏眼花，生病了依然坚持更新博客，为我点赞哈哈哈
-平常不怎么常用git,今天有空简单梳理下
-
 # 首先，神马是Git
 版本管理工具，和svn一样，更好用，因为有branch这个东西
 
@@ -19,20 +15,18 @@ svn的话，你做了changes，看下diff，OK的话就commit。git不一样，�
 你做了changes，需要用git add把它加到staging区域，然后再把stagin区域的提交，多了一步来保证你确实是想提交这个的。
 
 ## 2.branch
-T_T我真的好想用git就是因为这个branch啊，麻蛋，公司用svn。
-开发到一半，来了个bug，呵呵那就爽了。
-如果有branch多好啊，就可以新建branch开发新功能。如果有bug，就直接在master改，最后再merge就好。
+新建branch开发新功能，如果有bug，就直接在master改，最后再merge就好。
 Oh，还没说branch是啥。就叫分支，相当于你的每个主版本其实是一条线，开发新功能时，可以创建一条分支，随意开发而不影响主版本。
-最后如果测试完了，就可以merge到主版本。多人开发时尤其好用。
+最后如果测试完了，就可以merge到主版本，多人开发时尤其好用。
 
 ## 3.版本回退
-我一直都搞不明白，无论是svn还是git，口口声声说自己是版本管理工具，但实际上，回退的时候，都挺麻烦的。
 git有三种，对应不同情况
 1. checkout
     - 其实这不能算是回退，因为根本没有回退
     - 比如你想查看一个过去的版本 `git checkout version-number`，会让你的本地更新。
     - 回去的话用 `git checkout master`，回到master
     - 整个完整的commit history其实都还在，只是本地回退到某个版本
+    - 相当于svn update
 
 2. revert
     - undo a particular commit
@@ -46,8 +40,8 @@ git有三种，对应不同情况
 
 ## 4.和github有关的操作
 - `git remote`
-    - 以前一直不清楚这个到底哪来干嘛的，现在总算明白了，这特么就是相当于一个设置
-    - `git remote add orginin https://ur.remote.addr.com/` 相当于给你的远程仓库命名为origin
+    - 相当于一个设置
+    - `git remote add orgin https://ur.remote.addr.com/` 相当于给你的远程仓库命名为origin
     这样每次push就可以直接 `git push origin master` 这样，不用每次都输入你的远程仓库的地址
 
 - 关于多人协同

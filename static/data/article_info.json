@@ -479,6 +479,12 @@
             "title": "React组件",
             "type" : "React",
             "date": "April 2, 2018"  
+        },
+        {
+            "filename": "front_end/browser_rendering.md",
+            "title": "浏览器渲染过程",
+            "type" : "Others",
+            "date": "April 9, 2018"  
         }
     ] 
 } 
