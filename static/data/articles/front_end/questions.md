@@ -9,12 +9,12 @@
 - 简单来讲就是为了让机器理解内容, 根据页面内容与结构，选择合适的标签和属性
 - 具体讲，原来是用div/span + class的地方，根据其语义，可以换成新的tag
 	- nav, header, main, footer
-	- article, section, aside
+	- section, article, aside
 	- figure, figcaption
-	- detail, summary
-	- time
-	- b, strong(semantic)
-	- i, em(semantic)
+	- strong(semantic) instead of b
+	- em(semantic) instead of em
+	- //detail, summary
+	- //time
 
 - 更多
 	- microdata
@@ -136,6 +136,7 @@ ajax.onreadystatechange = function (){
 ## self-invoking function
 - it's used to solve the scope problem to avoid having same name is same scope
 - 当引入一个包的时候，可能会有重名变量或者函数，立即执行函数可以把它定义域限制在里面
+- 现在没用了，因为块级作用域
 
 ## async/await
 - A replacement of 'Promise'
@@ -272,6 +273,13 @@ session storage -> same as local storage expire when browser closed
 1. cookie
 	- if just different sub-domain (eg. 'a.b.com' & 'c.b.com'), then can set `document.domain='b.com'`
 	- server side can also set cookie domain to root '/' 		
+
+## 跨域
+当进行异步请求的时候，如果请求对象不在同一个源，是拿不到数据的，因为同源的限制。
+常用的解决方案大概有三个
+1. JSONP 
+2. CROS
+3. Websocket
 
 ## JSONP
 - [https://imnaifu.github.io/#/blog/JSONP](https://imnaifu.github.io/#/blog/JSONP)
