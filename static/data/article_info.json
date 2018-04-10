@@ -193,6 +193,12 @@
             "date": "2017-12-10"
         },
         {
+            "filename": "css/css_tricks.md",
+            "title": "CSS小技巧集合",
+            "type" : "CSS",
+            "date": "2017-12-10"
+        },
+        {
             "filename": "vuejs/ref.md",
             "title": "Vue API - ref",
             "type" : "Vue",
