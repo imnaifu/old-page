@@ -1,4 +1,4 @@
-## CSS Variables
+# CSS Variables
 - CSS begin to support variables
 - define '--variable_name'   
 ```css
@@ -14,7 +14,8 @@ element {
 ```
 
 
-## CSS pseudo class
+# CSS pseudo class（伪类）
+- 一个冒号 -> :
 ```css
 selector:pseudo-class{
     property:value;
@@ -24,9 +25,13 @@ a:hover{
     color:blue;
 }
 ```
-- [reference](https://www.w3schools.com/css/css_pseudo_classes.asp)
 
-## CSS pseudo elements
+# CSS pseudo elements （伪元素）
+- 两个冒号 -> ::
+- 一定要有content，不然没作用，最少也要`content=''`
+- 主要就是两个
+    - ::before
+    - ::after
 ```css
 selector::pseudo-element{
     property:value;
@@ -36,3 +41,7 @@ h1::before{
     content:url(some.img)
 }
 ```
+
+# Ref
+- [https://www.w3schools.com/css/css_pseudo_classes.asp](https://www.w3schools.com/css/css_pseudo_classes.asp)
+- [https://www.smashingmagazine.com/2011/07/learning-to-use-the-before-and-after-pseudo-elements-in-css/](https://www.smashingmagazine.com/2011/07/learning-to-use-the-before-and-after-pseudo-elements-in-css/)
