@@ -1,12 +1,12 @@
+# Wrapper
+我们一般所讲的闭包指的是，一个外部函数包裹一个内部函数，内部函数在外部函数运行结束后依然能访问到外部函数的变量。
+
 # 2018-01-21 Update
 最近看了一篇新的，有了更深的了解，关于闭包的实现，实际上靠的是个隐藏变量`[[Environment]]`，
 每个函数都有这么一个hidden property，它让函数remember where they were created，这样函数就能通过这个变量，
 访问到它的词法作用域下的外部变量。
 ![]([[enviroment]].png)
 换句话说，其实js闭包的实现主要是通过两个机制，作用域链和垃圾回收，理解这两个其实也就差不多了。
-
-## 闭包啊闭包
-一年前就困惑我，直到现在才算了解个皮毛
 
 ## 定义（closure）
 > This combination of a function object and a scope (a set of variable bindings) 
@@ -17,7 +17,6 @@ in which the function's variables are resolved is called a closure in the comput
 ## 其实吧
 闭包就是在函数内部作用域和全局作用域中间插入一个作用域，当然全局作用域也算是闭包，
 但我们所指的闭包一般是中间插入作用域的那种
-
 
 ## 两个要点
 1. 函数
@@ -62,7 +61,7 @@ console.log(add10(2)); // 12
 ```
 
 ### - 隐藏私有变量
-```
+```javascript
 var makeCounter = function() {
     var privateCounter = 0;
     function changeBy(val) {
@@ -92,7 +91,7 @@ var counter2 = makeCounter();
 而JS这种函数式编程，比如这个闭包，可以将变量绑定到函数，完全是反过来的。
 简单来说，OOP中，函数是为对象（变量）服务的，FP中，变量是为函数服务的。
 
-## reference
+# Ref
 - [https://javascript.info/closure](https://javascript.info/closure)
 - [https://github.com/mqyqingfeng/Blog/issues/9](https://github.com/mqyqingfeng/Blog/issues/9)
 - [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
