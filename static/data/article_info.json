@@ -491,6 +491,13 @@
             "title": "浏览器渲染过程",
             "type" : "Others",
             "date": "April 9, 2018"  
+        },
+        {
+            "filename": "react/project_gallery.md",
+            "title": "Gallery组件总结",
+            "type" : "React",
+            "date": "April 11, 2018"  
         }
+
     ] 
 } 
