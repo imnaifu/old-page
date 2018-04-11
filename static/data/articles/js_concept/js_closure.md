@@ -1,38 +1,39 @@
-# 2018-04-11 update 早上模模糊糊做梦突然想到闭包，然后猛地想明白了
+    # 2018-04-11 update 早上模模糊糊做梦突然想到闭包，然后猛地想明白了
 ## 如果我们只想要一个过程，比如一个果汁机，进来的是水果，出去的是果汁，那我们只需要一个函数就够了。
 
 ```javascript
 function juiceMachine(fruit){
-    let juice = fruit;
-    return juice;
+        let juice = fruit;
+        return juice;
 }
 ```
 
 ## 如果我们要的是一个带着变量的过程，比如一个可以往果汁里面加糖的果汁机，那我们就有两个选择了。
 1. 还是只用一个函数，把糖加到函数参数里面，这样你就需要一个外部变量记录当前有多少糖。
 2. 直接把函数和糖打包在一起，这样每次调用函数，糖都会因为使用而减少。
+## 第二个选择就是我们可爱的闭包了
 
 ```javascript
 function juciceMachine(fruit, sugar){
-    let juice = fruit + sugar;
-    sugar -= 1;
-    return [juice, sugar];
+        let juice = fruit + sugar;
+        sugar -= 1;
+        return [juice, sugar];
 }
 
 function closureJuiceMachine(sugar){
-    console.log(sugar); //10
-    let juiceMachine = (fruit) => {
-        let juice = fruit;
-        sugar -= 1;
-        console.log(sugar); //9, 8
-        return juice;
-    }
-    return juiceMachine;
+        console.log(sugar); //10
+        let juiceMachine = (fruit) => {
+            let juice = fruit;
+            sugar -= 1;
+            console.log(sugar); //9, 8
+            return juice;
+        }
+        return juiceMachine;
 }
 
-juiceMachine = closureJuiceMachine(10);
-appleJuice = juiceMachine('apple');
-bananaJuice = juiceMachine('banana');
+juiceMachine = closureJuiceMachine(10); //做一个有10份糖的果汁机
+appleJuice = juiceMachine('apple'); //做一份苹果汁，糖剩下9份
+bananaJuice = juiceMachine('banana'); //做一份香蕉汁，糖剩下8份
 
 console.log(appleJuice);
 console.log(bananaJuice);
@@ -49,10 +50,9 @@ console.log(bananaJuice);
 换句话说，其实js闭包的实现主要是通过两个机制，作用域链和垃圾回收，理解这两个其实也就差不多了。
 
 # 定义（closure）
-> This combination of a function object and a scope (a set of variable bindings) 
-in which the function's variables are resolved is called a closure in the computer science literature.
-
-说人话就是，闭包就是一个函数和作用域的组合，这个作用域让这个函数能访问自由变量，
+- This combination of a function object and a scope (a set of variable bindings) 
+in which the function's variables are resolved is called a closure in the computer science literature.   
+- 说人话就是，闭包就是一个函数和作用域的组合，这个作用域让这个函数能访问自由变量，
 
 # 其实吧
 闭包就是在函数内部作用域和全局作用域中间插入一个作用域，当然全局作用域也算是闭包，
@@ -85,11 +85,11 @@ console.log(c.get()); //'b'
 当然这是简单的闭包，我们具体用的闭包要复杂一些，但原理一样。
 简单说，JS也是有自动垃圾回收的，不用的会被立马回收掉，可是因为闭包，本来应该被回收的变量很可能因为别的函数的调用而继续保存。
 下面让我们看一个有实用价值的闭包
-> Closures are useful because they let you associate some data (the lexical environment)
-with a function that operates on that data
 
+- **Closures are useful because they let you associate some data (the lexical environment) 
+with a function that operates on that data**
 
-# - 作为工厂
+# 作为工厂
 ```javascript
 function makeAdder(x) {
     return function(y) {
@@ -104,9 +104,9 @@ console.log(add5(2));  // 7
 console.log(add10(2)); // 12
 ```
 
-# - 隐藏私有变量
+# 隐藏私有变量
 ```javascript
-var makeCounter = function() {
+var makeCounter = function() {  
     var privateCounter = 0;
     function changeBy(val) {
         privateCounter += val;
