@@ -493,9 +493,9 @@
             "date": "April 9, 2018"  
         },
         {
-            "filename": "react/project_gallery.md",
-            "title": "Gallery组件总结",
-            "type" : "React",
+            "filename": "projects/react_gallery.md",
+            "title": "Gallery组件",
+            "type" : "Projects",
             "date": "April 11, 2018"  
         },
         {
