@@ -289,8 +289,8 @@
             "date": "Dec 23, 2017"             
         },
         {
-            "filename": "database/db_index.md",
-            "title": "Database Index",
+            "filename": "database/db_index_engine.md",
+            "title": "Database Index & Engine",
             "type" : "Database",
             "date": "Dec 23, 2017"             
         },
@@ -303,12 +303,6 @@
         {
             "filename": "database/db_optimization.md",
             "title": "Database Optimization",
-            "type" : "Database",
-            "date": "Dec 23, 2017"             
-        },
-        {
-            "filename": "database/db_engine.md",
-            "title": "Database Engine",
             "type" : "Database",
             "date": "Dec 23, 2017"             
         },
