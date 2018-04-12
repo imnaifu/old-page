@@ -28,7 +28,7 @@ However, the index needs to be rebuilt whenever a record is changed, which resul
 
 
 # DB Engine (InnoDB && MyISAM)
-1. InnoDB support 'transaction' (atomic process)
+1. InnoDB support '**transaction**' (atomic process)
 2. InnoDB support 'foreign key' (better not use) 
 3. If you don't need the feature provided by InnoDb, 
 chose MyISAM, because MyISAM is a little faster than InnoDB
