@@ -3,11 +3,9 @@
 有个很恶心的做法，就是，监听，唉没办法，我觉得组件通讯，如果不用vuex，是一件挺麻烦的事。
 具体做法就是，子组件想要传数据给父组件的时候，就`$emit`一个自定义事件，然后将数据放入。
 想要获得数据的父组件用`$on`监听那个自定义事件，从中取得数据。
-
-
-```javascript
     
-    //parent here 
+```html
+    <!-- parent here  -->
     <parent>
         <child v-on:customize_event="get_event_from_child"></child>
     </parent>
@@ -20,9 +18,7 @@
             }
         }
     </script>
-
-
-    //child here
+    <!-- //chi  ld here -->
     <div>
         <button v-on:click='call_parent'>call</button>
     </div>
@@ -35,7 +31,6 @@
             }
         }
     </script>
-
 ```
 
 # 关于$event这个特殊变量

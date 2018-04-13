@@ -505,6 +505,12 @@
             "date": "April 9, 2018"  
         },
         {
+            "filename": "js_usage/jquery.md",
+            "title": "jQuery",
+            "type" : "JavaScript    ",
+            "date": "April 9, 2018"  
+        },
+        {
             "filename": "projects/react_gallery.md",
             "title": "Gallery组件",
             "type" : "Projects",
