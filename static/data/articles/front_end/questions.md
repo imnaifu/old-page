@@ -79,9 +79,9 @@
 - [http://lucybain.com/blog/2015/css-block-formatting-context/](http://lucybain.com/blog/2015/css-block-formatting-context/)
 
 ## Clear float
-1. add an element with style="clear:both"
+1. 加一个新元素 with style="clear:both"
 2. set parent element style="overflow： auto/hidden"
-3. use pseudo-element ::after {content:''; clear:both; display: block;}
+3. 加一个新元素 with pseudo-element ::after {content:''; clear:both; display: block;}
 
 ## width, height
 - scroll width: 不包含滚动条，包含隐藏内容，整体区域
