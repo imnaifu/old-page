@@ -3,46 +3,50 @@
 有个很恶心的做法，就是，监听，唉没办法，我觉得组件通讯，如果不用vuex，是一件挺麻烦的事。
 具体做法就是，子组件想要传数据给父组件的时候，就`$emit`一个自定义事件，然后将数据放入。
 想要获得数据的父组件用`$on`监听那个自定义事件，从中取得数据。
-    
+
 ```html
-    <!-- parent here  -->
-    <parent>
-        <child v-on:customize_event="get_event_from_child"></child>
-    </parent>
-    <script>
-        export default {
-            methods: {
-                get_event_from_child(){
-                    console.log(arguments);//['data1 here', 'data2 here']
-                }
+<!-- parent here  -->
+<parent>
+    <child v-on:customize_event="get_event_from_child"></child>
+</parent>
+<script>
+    export default {
+        methods: {
+            get_event_from_child(){
+                console.log(arguments);//['data1 here', 'data2 here']
             }
         }
-    </script>
-    <!-- //chi  ld here -->
-    <div>
-        <button v-on:click='call_parent'>call</button>
-    </div>
-    <script>
-        export default {
-            methods: {
-                call_parent(){
-                    this.$emit('customize_event', 'data1 here', 'data2 here');
-                }
+    }
+</script>
+
+<!-- //child here -->
+<div>
+    <button v-on:click='call_parent'>call</button>
+</div>
+<script>
+    export default {
+        methods: {
+            call_parent(){
+                this.$emit('customize_event', 'data1 here', 'data2 here');
             }
         }
-    </script>
+    }
+</script>
 ```
+
 
 # 关于$event这个特殊变量
 我看了很深，也找了半天，几乎没有什么文章介绍这个，相信用的也不多，我的结论是，不要用，完全不要出现这个。
 这个点太细了，其实我是不想花这么多时间来看的，一下子体会到了高中班主任对我的评语，爱较真，真的是看不明白就不想停下来。
 总之这个$event代表的是事件本身
-```
-abc($event)；
+
+```javascript
+abc($event);
 function abc(e){
     e.preventDefault()
 }
 ```
+
 这种使用完全可以用event modifier to replace，所以完全不要使用这玩意。
 
 # 坑
@@ -58,6 +62,7 @@ call回调的时候，这样放不加括号是最完美的而且也是最好的�
 然后就有一种叫做总线的方法（学好通信原理走遍天下都不怕），将所有的事件的触发和监听都放在这里。
 总线这个，也只是个局部到全局的抽象，实际上的方法还是子组件创建自定义事件，父组件监听。
 实际上总线就是新创建一个vue instance。
+
 ```javascript
 const bus = new Vue({});
 
@@ -68,6 +73,6 @@ bus.$emit();
 bus.on();
 ```
 
-## Reference
+## Ref
 - [Vue official](https://vuejs.org/v2/guide/events.html#ad)
 - [One issue I found](https://github.com/vuejs/vue/issues/5735)

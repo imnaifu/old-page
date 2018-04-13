@@ -26,6 +26,22 @@
 
 之后layout捕获Render tree完成，然后计算node位置，最后由Paint捕获，画在屏幕。
 
+# 关于 script tag的一些attribute
+## async [boolean]
+- 和DOM parse过程并行，script异步加载
+- 加载完立即运行不保证顺序
+
+## defer [boolean]
+- 和DOM parse过程并行，script在document parse了之后执行，但在DOMContentLoaded之前
+- 保证顺序
+- 其实没什么用，因为作用等同于把script放在`</body>`之前
+
+## crossorigin [anonymous|use-credentials]
+- 如果添加了这个attribute，在进行跨域操作时，会拿到错误信息
+- 如果没有这个，则直接返回404
+
+![script_attr.png](script_attr.png)
+
 # 简单总结的话  
 1. **处理HTML创建DOM tree**
 2. **处理CSS创建CSSOM tree**
@@ -37,3 +53,5 @@
 - [construction](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model)
 - [rendering](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction)
 - [https://zhuanlan.zhihu.com/p/25554352](https://zhuanlan.zhihu.com/p/25554352)
+- [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
+- [https://eager.io/blog/everything-I-know-about-the-script-tag/](https://eager.io/blog/everything-I-know-about-the-script-tag/)
