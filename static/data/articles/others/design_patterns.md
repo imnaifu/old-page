@@ -1,22 +1,28 @@
-# The most important thing of code design is *'low in coupling'*
-1. **Factory(工厂模式)**    
-    - Instead of using New to create instance, using the create method which belongs to the factory class.   
-    - 相当于在创建实例的过程中多加了一层
-2. **Singletong(单例模式)**  
-    - 只允许一个实例的存在
-3. **Register(注册树）**
-    - 将已经创建好的实例注册到一个Register Class里面
-    - Class should have set, unset and get method to return the instance.
-4. **Adapter(适配器)**
-    - cretea interface which should be implemented by different class that realize the same function.
-    - 构建一个通用的接口，所有实现同一功能的类都要Implement这个接口
-5. **Strategy(策略模式)**
-6. **数据对象映射模式**
-7. **Observer(观察者模式)**
-8. **Prototype(原型模式)**
-9. **Decorator(装饰器模式)**
-10. **Iterator(迭代器模式)**
-11. **Proxy(代理模式)**
-    
+# 基本原则
+其实我觉得代码的架构最最最重要的应该低耦合，其他的都是次要的，就算是设计模式
+
+# 设计模式
+## 1. Factory（工厂模式）    
+- Instead of using New to create instance, using the create method which belongs to the factory class.   
+- 相当于在创建实例的过程中多加了一层
+## 2. Singletong（单例模式）
+- 只允许一个实例的存在
+## 3. Register（注册树）
+- 将已经创建好的实例注册到一个Register Class里面
+- Class should have set, unset and get method to return the instance.
+## 4. Adapter（适配器）
+- cretea interface which should be implemented by different class that realize the same function.
+- 构建一个通用的接口，所有实现同一功能的类都要Implement这个接口
+## 5. Strategy（策略模式）
+## 6. 数据对象映射模式
+## 7. Observer（观察者模式）
+## 8. Prototype（原型模式）
+- JavsScript的原型链
+## 9. Decorator（装饰器模式）
+## 10. Iterator（迭代器模式）
+## 11. Proxy（代理模式）
+## 12. 控制反转
+- callback function
+
 # Ref
 - [(http://www.imooc.com/learn/236](http://www.imooc.com/learn/236)

@@ -2,7 +2,7 @@
 - seperator (/ # ~)
 - meta character
 
-# Greedy/Lazy mode
+# Greedy/Lazy mode（贪婪/懒惰模式）
 - greedy mode match as more as possible (* +)
 - lazy mode match as less as possible (?)
 - {2} match exactly 2 times,
@@ -16,6 +16,7 @@
     - $match[0] is the whole 
     - $match[1] is the first subgroup depends on bracket ()
 - preg_replace($pattern, $replacement, $matches)
+
 ```php
 $string = 'April 15, 2014';
 $pattern = '/(\w+) (\d+), (\d+)/i';
@@ -23,7 +24,6 @@ $replacement = '$3, ${1} $2';
 echo preg_replace($pattern, $replacement, $string); //结果为：2014, April 15
 ```
     
-
 # Details
 - **/**: start and end match
 - **^**: match start of the string, or 'nothing but' inside []
@@ -49,13 +49,14 @@ echo preg_replace($pattern, $replacement, $string); //结果为：2014, April 15
 - **\D**:  Match non-digit character
 - **word boundary**: like , | . | ! | space ....
 
-- **everything inside the brackets represents ONE character**
+- **方括号表示一个（everything inside the brackets represents ONE character）**
 - if($string =~ /[Clinton|Bush|Reagan]/){$office = "President"}
 
 - Character classes have three main advantages:
     1. Shorthand notation, as [AEIOUY] instead of (A|E|I|O|U|Y). This advantage is minor at best.
     2. Character Ranges, such as [A-Z].
     3. One to one mapping from one class to another, as in tr/[a-z]/[A-Z]/. This is essential! It will be discussed in the section on translations.
+
 - !  If an exclamation mark (!) occurs as the first character in a regular expression, all magic characters are treated as special characters. An exclamation mark is treated as a regular character if it occurs anywhere but at the very start of the regular expression.
 
 - there are 14 metacharacters that must be preceded by a backslash "" in order to drop their special meaning and be treated literally inside an expression: the open/close square brackets, "[" and "]"; the backslash ""; the caret "^"; the dollar sign "$"; the period or dot "."; the vertical bar or pipe symbol "|"; the question mark "?"; the asterisk "*"; the plus-sign "+"; open/close curly braces, "{" and "}"; and open/close parenthesis, "(" and ")".[2]

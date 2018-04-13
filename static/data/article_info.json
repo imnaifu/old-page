@@ -103,6 +103,12 @@
             "date": "2017-11-23"
         },     
         {
+            "filename": "others/security.md",
+            "title": "Security",
+            "type" : "Others",
+            "date": "2017-11-23"
+        }, 
+        {
             "filename": "js_usage/object.md",
             "title": "JavaScript对象",
             "type" : "JavaScript",
@@ -489,7 +495,13 @@
         {
             "filename": "front_end/browser_rendering.md",
             "title": "浏览器渲染过程",
-            "type" : "Others",
+            "type" : "Front-end",
+            "date": "April 9, 2018"  
+        },
+        {
+            "filename": "projects/calendar_app.md",
+            "title": "Calendar组件",
+            "type" : "Projects",
             "date": "April 9, 2018"  
         },
         {

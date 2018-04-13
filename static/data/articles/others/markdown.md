@@ -1,4 +1,4 @@
-## Basic
+# 基本用法
 ```md
 ## heading
 
@@ -37,7 +37,7 @@ link: [link](http://example.com)
 img: ![alt_text](example.jpg)
 ```
 
-## Advanced
+# 高级用法
 ```md
 checklist  
 - [x] this task is done

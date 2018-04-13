@@ -1,19 +1,21 @@
-1. sequence array: fast in retrieve, bad is insert
-2. linked list: fast in insert, bad in retrieve
 
-### linked list 
+# Linked List featrue
+## 1. sequence array: fast in retrieve, bad is insert
+## 2. linked list: fast in insert, bad in retrieve
+
+# linked list 
 - head, head.value, head.next
 - tail, tail.value, tail.next = null
 
-#### insert head
-```
+# insert head
+```javascript
 $new_head = new vertex();
 $new_head.next = $head;
 $head = $new_head;
 ```
 
-#### insert tail
-```
+# insert tail
+```javascript
 $new_tail = new vertex();
 $tmp = head;
 while ($tmp.next != null){
@@ -23,8 +25,8 @@ $tmp.next = $new_tail;
 $new_tail.next = null;
 ```
 
-#### insert kth
-```
+# insert kth
+```javascript
 $new_vertex = new vertex();
 $tmp = $head;
 while (--$k != 0){
@@ -35,14 +37,14 @@ $tmp.next = $new_vertex;
 $new_vertex.next = $hold;
 ```
 
-#### remove head
-```
+# remove head
+```javascript
 $head = $head.next;
-delet $head;
+delete $head;
 ```
 
-#### remove tail;
-```
+# remove tail;
+```javascript
 $tmp = $head;
 while ($tmp.next != null){
   $pre = $tmp;
@@ -52,8 +54,8 @@ $pre.next = null;
 delete $tmp;
 ```
 
-#### remove kth
-```
+# remove kth
+```javascript
 $tmp = $head;
 while (--$k != 0){
   $pre = $tmp;
