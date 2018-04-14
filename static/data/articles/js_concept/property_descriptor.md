@@ -1,4 +1,4 @@
-## 对象的属性（Porperty）不仅仅是有一个value而已，背后有更多的东西，
+# 对象的属性（Porperty）不仅仅是有一个value而已，背后有更多的东西，
 比如用来表示这个属性是否可以重写，是否需要在枚举的时候出现。
 ```javascript
 // 比如我们有个Object c
@@ -19,7 +19,7 @@ console.log(flags);
 	value:1,
 	writable: true,
 	enumerable: true,
-	configrable: true
+	configrable: true	
 }		
 **/
 ```
@@ -29,7 +29,20 @@ console.log(flags);
 - enumerable: true 可以被list出来 (for ... in)
 - configrable: false 不可以被defineProperty更改或者删除
 
-## 比如Math.PI就是个永久只读的属性
+# Object.defineProperty(object, propertyName, descriptor)
+这个方法可以用来定义这个属性的descriptor
+```javascript
+let a = {};
+//如果不set成true，default全是false
+Object.defineProperty(a, 'name', {
+	value: 'berry',
+	//writable: false,
+	//enumerable: false,
+	//configrable: false	
+});
+```
+
+# 比如Math.PI就是个永久只读的属性
 ```javascript
 let descriptor = Object.getOwnPropertyDescriptor(Math, 'PI');
 console.log(descriptor);
