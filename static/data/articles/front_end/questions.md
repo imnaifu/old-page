@@ -29,8 +29,7 @@
 	- `initial-scale=1.0` set the initial zoom level when first load
 
 ## canvas:
-- used to build a clock on canvas
-- what is canvas: used to draw graphics by using javascript
+- 可以使用javascript画图
 
 # CSS
 ## block model
@@ -40,9 +39,14 @@
 - inherit, static, relative, absolute, fixed, sticky(toggle from relative to fixed)
 
 ## css reset, normalize.css
-- 清除浏览器默认样式， 从而让UI在不同的浏览器看起来也一样
-- difference is css reset everything, normalize.css remain part of it
-	
+- reset 清除浏览器默认样式，
+- normalize 从而让UI在不同的浏览器看起来一样
+
+## css inline, inline-block, block
+- inline: height, width, margin-top, margin-bot 都没用
+- inline-block: 都有用，只占它需要的大小
+- block: 都有用，并且占父元素的整个一行 
+
 ## css centralize
 - horizontal
 	- text-align: center
@@ -87,6 +91,7 @@
 - scroll width: 不包含滚动条，包含隐藏内容，整体区域
 - client width：不包含滚动条，不包含隐藏内容，显示区域
 - offset width：包含滚动条，不包含隐藏内容，显示区域
+- 总之关于隐藏内容和滚动条的组合
 
 # JS 
 ## DOM 增删改查
@@ -100,7 +105,7 @@
 	- .attr() / removeAttr()
 	- .val()
 
-## js data type
+## js数据类型
 1. primitive
 	- Boolean, Null, Undefined, Number, String, Symbol
 2. composite
@@ -158,6 +163,7 @@ ajax.onreadystatechange = function (){
 - 递归copy one by one 	
 
 ## remove duplicate value in array
+- 用set
 - let return = Array.from(new Set(a));
 
 ## using regex do the same thing as string.trim()
@@ -206,7 +212,7 @@ class Abc extends Def{
 ## DOM event 
 
 ## Event delegation(事件委托)
-- means that parent node handle event for child node
+- 父组件代替子组件处理事件
 
 ## mobile touch event
 - touchStart
@@ -233,23 +239,22 @@ class Abc extends Def{
 - 403: forbidden
 
 
-## difference between 301 & 302
-- 301: resource is moved permanently, client should request the new location from now on
-- 302: resource is temporarily located somewhere else, client should continue request for the original url 
+## 状态码 301 & 302
+- 301: 永久转移（moved permanently），下次请求新地址
+- 302: 暂时转移（temporarily located somewhere else），下次还请求这个地址 
 
 ## how to do http cache, catch-control & etag	
 - [https://imnaifu.github.io/#/blog/HTTP%20Cache](https://imnaifu.github.io/#/blog/HTTP%20Cache)
 
 ## cookie, session
-- server send 'Set-Cookie' header to client
+- server发送'Set-Cookie' header到client
 - then every new request, browser will send requeset with stored cookie to server 
 - Secure & HttpOnly
-	1. 'Secure' tag, means cookie will only sent by 'https' protocal
-	2. 'HttpOnly' tag inaccessable to 'document.cookie', they are only sent to the server
+	1. 'Secure' tag, cookie只会在有HTTPS的时候发送
+	2. 'HttpOnly' tag 不可以通过 'document.cookie' 拿到，只能用来发送给服务器
 - session cookie & persistent cookie
-	1. session cookie, no 'Expires', deleted after browser close
-	2. permanent cookie, expire after a specific date(Expires) or after a specific length of time(Max-Age) 
-- session used to store information across multiple pages
+	1. session cookie, 浏览器关闭就销毁
+	2. permanent cookie, expire当过了某个日期（Expires）或者过了一定的时间time（Max-Ag）
 
 ## localStorage & cookie
 - storage size, functionality, traffic
@@ -257,57 +262,38 @@ cookie -> for server side reading
 local storage -> for client side reading
 session storage -> same as local storage expire when browser closed
 
-## GET & POST
-...
+# 跨域
+## 什么是同源策略
+1. 同一个协议（http/https）
+2. 同一个host name，'abc.com'
+3. 同一个端口 80
 
-## cross domain
-- same-origin policy
-	1. URI scheme (protocol)
-	2. host name
-		- 'www.abc.com' && '123.abc.com' && '123.www.abc.com' are all considered as not the same host name
-	3. port number 
-- same-origin policy lead to some restrictions
-	1. cookie, localStorage, indexDB can not access
-	2. DOM element can not get
-	3. ajax request can not send
-1. cookie
-	- if just different sub-domain (eg. 'a.b.com' & 'c.b.com'), then can set `document.domain='b.com'`
-	- server side can also set cookie domain to root '/' 		
+## 浏览器同源策略（same-orgin policy）导致：
+1. cookie, localStorage, indexDB拿不到
+2. DOM element拿不到
+3. ajax请求不到
 
-## 跨域
-当进行异步请求的时候，如果请求对象不在同一个源，是拿不到数据的，因为同源的限制。
-常用的解决方案大概有三个
-1. JSONP 
-2. CROS
-3. Websocket
-
-## JSONP
+## 解决方案
+当进行异步请求的时候，如果请求对象不在同一个源，是拿不到数据的，因为同源的限制。常用的解决方案大概有三个
+### 1. JSONP
 - [https://imnaifu.github.io/#/blog/JSONP](https://imnaifu.github.io/#/blog/JSONP)
-
-## CORS (Cross-Origin Resource Sharing)
-- same like JSONP is another way of cross domain messaging
-- you can write you ajax like the way before, browser will auto detect if it belong to the same source,
-if not, `Origin` will be added in the header to tell the server the source of the request, then server will
-decide weather to respond or not.
-- includes simple request & complicate request
-1. simple request 
-	- HEAD, GET, POST method, and only a few header
-	- just sent with the origin info, if server respond with header 'Access-Control-Allow-Origin' then success, 
-	else fail, will be catch by the onerror method from XMLHttpRequest
-	- for cookie, follow the same-origin policy, only send same-origin cookie
-	- if wanna sent cookie：
-		1. server need to set `Access-Control-Allow-Credentials: true`
-		2. ajax call also need to set `var xhr = new XMLHttpRequest(); xhr.withCredentials = true;`
-2. complicate request (if wanna json data, goes here)
-	- sent a preflight request to server using OPTION http method with the origin&method to check with server
-	- if the server accept the origin and method, then same as the simple request
+### 2. CROS (Cross-Origin Resource Sharing)
+- 前端不需要做什么，正常调用Ajax就好，如果是跨域的，浏览器会自动加一个'Origin'在header里面，
+服务器拿到orgin信息，决定是否respond
+- 背后原理，请求分两种
+	1. 简单请求：HEAD, GET, POST
+		- 浏览器直接发送，如果服务器respond一个header 'Access-Control-Allow-Origin'，那么请求成功
+	2. 复杂请求: 剩下的方式
+		- 先发送一个OPTION请求，带有orgin和method的信息
+		- 如果server accept，剩下的部分和简单请求一样
+3. Websocket
 
 ## postMessage (cross-document messaging)
 - usage `otherWindow.postMessage(message, targetOrigin)`
 - Using the Messaging API `postMessage()`, plain text postMessageage can be sent from one domain to another (e.g from parent to iframe)
 - the receiving page should dispatch event `window.addEventListener("message", handleMessage)`
 
-```javascirpt
+```javascript
 	// then in the function
 	function handleMessage(e){
 		e.origin //source url
@@ -319,16 +305,14 @@ decide weather to respond or not.
 # Security
 ## XSS (cross site scripting)
 - what is it: 
-	- script code appear in somewhere should be only text
+	- javascript code出现在本来只应该出现文本的地方
 - why:
-	- back-end rendering forget to change '<' to htmlentity
-	- or front-end rendering 
+	- 后端渲染没有转换成HTML entity
+	- 或者是前端
 ## CSRF (cross site request forgery)
 - must fulfill these two steps
-	1. login to trusted website A, so you now have session A
-	2. go to dangerous website B, then B will sent request to A, 
-since you already login A with cookie, so B will get the data he want
-
+	1. login去可信任的网站A，然后就有了A的cookie
+	2. 然后去不可信的网站B，B使用A的cookie向A发送请求，然后B就拿到的A的数据
 
 
 # Webpack
@@ -344,4 +328,35 @@ since you already login A with cookie, so B will get the data he want
 - yes can, if a is an object, then will call `toString()` method, 
 so just set i=1 and return i++.
 
- 
+# More
+## JS清空一个数组的最好方法
+```javascript
+let a = [];
+
+//set length to 0
+a.legnth = 0;
+
+//use splice(startIndex, howMany, items...)
+//splice 用于插入，删除和替换数组元素
+a.splice(0, a.length); //in place
+```
+
+## CSS resize
+resize属性规定可否由用户调整元素的尺寸，此外需要设置overflow!='visable'
+```css
+div {
+	resize: both | horizontal | vertical;
+	overflow: auto;
+}
+
+/* overflow */
+#whatever {
+	overflow: visable; /* (default) 超出也可见 */
+	overflow: hidden; /* 超出隐藏 */
+	overflow: scroll; /* 露出scroll bar */
+	overflow: auto; /* 超出就有scroll bar */
+}
+```
+
+## CommonJS规范
+CommonJS 规范是为了解决JavaScript 的作用域问题而定义的模块形式，可以使每个模块它自身的命名空间中执行。该规范的主要内容是，模块必须通过 **module.exports** 导出对外的变量或接口，通过 **require()** 来导入其他模块的输出到当前模块作用域中。
