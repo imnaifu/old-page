@@ -360,3 +360,11 @@ div {
 
 ## CommonJS规范
 CommonJS 规范是为了解决JavaScript 的作用域问题而定义的模块形式，可以使每个模块它自身的命名空间中执行。该规范的主要内容是，模块必须通过 **module.exports** 导出对外的变量或接口，通过 **require()** 来导入其他模块的输出到当前模块作用域中。
+
+
+# What happened when enter url
+如果完全不考虑缓存的情况下
+1. call DNS server，查询具体IP
+2. 发送http/https请求到该IP的80/443端口
+3. web服务器传回data
+4. 浏览器渲染

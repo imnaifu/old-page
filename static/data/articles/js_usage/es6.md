@@ -86,6 +86,7 @@ let person = {
 		this.hobbies.forEach((hobby)=>{
 			console.log(`${this.name} like ${hobby}`);
 			//arrow function way, because 'this' refer to parent
+			//词法作用域
 		})
 	}
 }

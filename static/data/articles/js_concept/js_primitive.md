@@ -1,9 +1,9 @@
 # 什么是原始值？     
-JS并不是像其他面向对象语言一样，一切皆对象，而是存在一个叫原始值的东西  
-原始值不是object，没有property，没有method  
-一般来说，均来自于底层实现  
+JS并不是像其他面向对象语言一样，一切皆对象，而是存在一个叫原始值的东西，
+原始值不是object，没有property，没有method，一般来说，均来自于底层实现  
 所有原始值皆不可改变  
-There are 6 primitive data types
+
+## There are 6 primitive data types
 - string
 - number 
 - boolean
