@@ -46,8 +46,8 @@
 1. **处理HTML创建DOM tree**
 2. **处理CSS创建CSSOM tree**
 3. **合并DOM & CSSOM得到Render tree**
-4. **对render tree进行layout处理，得到position**
-5. **在屏幕渲染出来**
+4. **reflow 对render tree进行layout处理，得到position**
+5. **repaint 在屏幕渲染出来**
 
 # Ref 
 - [construction](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model)
@@ -55,3 +55,4 @@
 - [https://zhuanlan.zhihu.com/p/25554352](https://zhuanlan.zhihu.com/p/25554352)
 - [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
 - [https://eager.io/blog/everything-I-know-about-the-script-tag/](https://eager.io/blog/everything-I-know-about-the-script-tag/)
+- [https://acrens.github.io/2017/03/23/2017-03-22-reflow&repaint/](https://acrens.github.io/2017/03/23/2017-03-22-reflow&repaint/)

@@ -11,14 +11,16 @@ React会拿更新前的Vitual DOM和更新后Virtual DOM的进行对比（diffin
 1. 更新整个virtual DOM
     - 当setState()被调用的时候, React会从头开始创建全新的Virtual DOM，整个过程很快不会影响performance. 
     每次更新的时候，React都会存在virtual DOM, 一个是上一个状态的Virtual DOM另一个是当前状态的Virtual DOM.
+    - render函数返回的就是虚拟DOM(javascript object)
 2. 与上一个状态的virtual DOM对比，找到改变的部分
     - React用diff algorithm比较旧的和新的virtual DOM从而找到最少的步骤来update the Real DOM.
+    - React通过这些虚拟DOM计算出需要实现页面更新所需要的最少的操作
 3. 根据改变的部分对real DOM进行更新
     - 一旦有了这些步骤，React会在一个事件循环内执行这些步骤。 
 4. 遍历render tree让屏幕更新
     - 一旦所有步骤执行完毕，React会重新渲染reald DOM，意味着在事件循环, 只执行了一次更新DOM的操作
 
-# When update
+# When to update
 - AngularJS uses dirty checking to find the models which has changed. 
 This **dirty checking process runs in cycle after a specified time**. 
 As the application grows, checking the whole model reduces the performance and thus makes the application slow.
@@ -26,5 +28,30 @@ As the application grows, checking the whole model reduces the performance and t
 - ReactJS uses observable’s to find the modified components. 
 **Whenever setState() method is called on any component, ReactJS makes that component dirty and re-renders it**.  
 
+# diff算法
+- 两个假设
+    - 两个不同类型的元素会产生不同的树结构，下面例子
+    - 开发者可以用props.key来告诉React哪些子元素是stable的
+```javascript
+<div>
+    <counter/>
+</div>
+
+<span>
+    <counter/>
+</span>
+```
+- Time complexity O(n)
+- 广度优先搜索，如果一个节点发生改变，它的所有子节点都当做改变
+- 
+
+# React性能优化
+- 很简单，每次调用setState方法都会重绘（repaint）当前DOM的整个子树
+- 所以尽量在较“低”的节点调用setState方法
+- 自己实现shouldComponentUpdate()阻止整个子树的repaint 
+- Perf.Start(), Perf.Stop()
+
 # Ref
 - [https://hackernoon.com/virtual-dom-in-reactjs-43a3fdb1d130](https://hackernoon.com/virtual-dom-in-reactjs-43a3fdb1d130)
+- [https://www.youtube.com/watch?v=d7pyEDqBDeE](https://www.youtube.com/watch?v=d7pyEDqBDeE)
+- [http://zencode.in/12.react-diff%E7%AE%97%E6%B3%95.html](http://zencode.in/12.react-diff%E7%AE%97%E6%B3%95.html)
