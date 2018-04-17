@@ -517,8 +517,8 @@
             "date": "April 11, 2018"  
         },
         {
-            "filename": "react/react_virtual_dom.md",
-            "title": "React Virtual DOM 原理",
+            "filename": "react/react_deep.md",
+            "title": "React 原理",
             "type" : "React",
             "date": "April 11, 2018"  
         }
