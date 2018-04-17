@@ -65,6 +65,24 @@ $pre.next = $tmp.next;
 delete $tmp;
 ```
 
+# Reverse 反转
+```javascript
+function reverseLinkedList(head){
+    let prev = null;
+    while (head !== null){
+        //save next
+        let next = head.next;
+        //point to prev
+        head.next = prev;
+        //save prev
+        prev = head;
+        //move to next one
+        head = head.next;
+    }
+    //prev was the last node
+    return prev; 
+}
+```
 
 
 

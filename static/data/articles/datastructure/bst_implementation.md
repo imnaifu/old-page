@@ -1,5 +1,4 @@
 ```javascript
-
 function bst(root){
 
     /* node object */
