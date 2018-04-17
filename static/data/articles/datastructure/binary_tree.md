@@ -9,9 +9,9 @@
 1. DFS (Deapth First Search)
     - level order
 2. BFS (Breadth First Search)
-    - Pre-order (parent->left->right) 中->左->右 根节点开始
-    - In-order (left->parent->right) 左->中->右 二叉搜索树从小到大排列
-    - Post-order (left->right->parent) 左->右->中 最深左边节点开始
+    - Pre-order 前序 (parent->left->right) 根节点->左子树->右子树 根节点开始
+    - In-order 中序 (left->parent->right) 左子树->根节点->右子树 二叉搜索树从小到大排列
+    - Post-order 后序 (left->right->parent) 左子树->右子树->根节点 最深左边节点开始
  
 # Perfect Tree
  - Every level is full or empty

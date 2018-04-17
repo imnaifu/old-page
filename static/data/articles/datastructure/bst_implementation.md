@@ -32,10 +32,10 @@ function bst(root){
     /* insert specific value */
     this.insert = function(val){
         var cur = this.root;
-        new_node = new node(val);
+        var new_node = new node(val);
         while (1){
             if (val > cur.value){
-                //search and insert left
+                //search and insert right
                 if (cur.right == null){
                     cur.right = new_node;
                     break;
@@ -44,7 +44,7 @@ function bst(root){
                 }
             }
             else if (val < cur.value){
-                //search and insert right
+                //search and insert left
                 if (cur.left == null){
                     cur.left = new_node;
                     break
@@ -61,6 +61,7 @@ function bst(root){
     /* traverse */
     this.traverse = function(type='in_order'){
 
+        //small to big
         function in_order(node, list=[]){
             if (node){
                 in_order(node.left, list);
@@ -73,7 +74,7 @@ function bst(root){
         function pre_order(node, list=[]){
             if (node){
                 list.push(node.value);
-                pre_order(node.left, list);
+                pre_order(node.left,        );
                 pre_order(node.right, list);
             }
             return list;

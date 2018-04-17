@@ -67,6 +67,9 @@ delete $tmp;
 
 # Reverse 反转
 ```javascript
+/*
+需要保存前一个和后一个
+*/
 function reverseLinkedList(head){
     let prev = null;
     while (head !== null){
