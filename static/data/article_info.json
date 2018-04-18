@@ -526,6 +526,13 @@
             "filename": "front_end/performance.md",
             "title": "前端性能优化",
             "type" : "Front-end",
+          
+            "date": "April 18, 2018"  
+        },
+        {
+            "filename": "others/mvc.md",
+            "title": "MVC",
+            "type" : "Others",
             "date": "April 18, 2018"  
         }
     ] 
