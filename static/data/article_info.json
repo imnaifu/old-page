@@ -534,6 +534,12 @@
             "title": "MVC",
             "type" : "Others",
             "date": "April 18, 2018"  
+        },
+        {
+            "filename": "front_end/mobile.md",
+            "title": "移动端适配",
+            "type" : "Others",
+            "date": "April 18, 2018"  
         }
     ] 
 } 
