@@ -1,7 +1,6 @@
 # 什么是原始值？     
 JS并不是像其他面向对象语言一样，一切皆对象，而是存在一个叫原始值的东西，
-原始值不是object，没有property，没有method，一般来说，均来自于底层实现  
-所有原始值皆不可改变  
+原始值不是object，没有property，没有method，一般来说，均来自于底层实现，**所有原始值皆不可改变**
 
 ## There are 6 primitive data types
 - string
@@ -71,7 +70,7 @@ typeof 是一个操作符，不是函数，possible return values:
 - boolean -> 'boolean'
 - null -> 'object' //because null point to a empty object
 - undefined  -> 'undefined'
-- symbol (new) -> 'symbol'
+- symbol(new) -> 'symbol'
 - function -> 'function'
 - object -> 'object'
 
@@ -79,7 +78,7 @@ typeof 是一个操作符，不是函数，possible return values:
 instance也是一个操作符
 - syntax: `object instanceof contructor`
 - 一般用在custom types
-- 返回boolean，看对构造函数的原型是否在对象的原型链里
+- 返回boolean，**判断构造函数的.prototype属性是否在对象的原型链里**
 
 ```javascript
 function C(){} //constructor

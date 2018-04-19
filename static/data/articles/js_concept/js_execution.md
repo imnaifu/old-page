@@ -77,7 +77,7 @@ function b(){
 }
 
 var v = 2;
-b();
+b(); // 2   
 // 执行栈从上往下 [ a() --> b() --> global context ]
 // a的作用域链: inner a --> global
 // b的作用域链: inner b --> global

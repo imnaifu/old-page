@@ -8,30 +8,30 @@ export指的是导出的东西，有两种方式，default & named
 - default
 
 ```javascript
-	//file a.js
-	const a = 1;
-	export default a;
+//file a.js
+const a = 1;
+export default a;
 
-	//file b.js
-	import whateverName from 'a.js';	
-	// 如果import没有加{}说明引入的是default
+//file b.js
+import whateverName from 'a.js';	
+// 如果import没有加{}说明引入的是default
 
 ```
 
 - named
 
 ```javascript
-	//file a.js
-	const a = 1;
-	const b = 2;
-	export {a, b};
+//file a.js
+const a = 1;
+const b = 2;
+export {a, b};
 
-	//this one count as named-import also but only apply to function&class
-	export function c(){};
+//this one count as named-import also but only apply to function&class
+export function c(){};
 
-	//file b.js
-	import {a, b, c} from 'a.js';
-	// import有{}，说明引入的是named value
+//file b.js
+import {a, b, c} from 'a.js';
+// import有{}，说明引入的是named value
 
 ```
 

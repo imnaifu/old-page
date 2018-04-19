@@ -38,7 +38,7 @@ first(1, function(data1){
 
 # Promise
 callback其实一个很general的概念，在用的时候没有规范会很乱，所以offically定义了一个标准--promise，
-算是callback的其中一种实现方式吧。
+所以 Promise 算是以中被约束的 Callback
 
 ```javascript
 let promise = new Promise(function(resolve, reject){
