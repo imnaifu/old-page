@@ -92,6 +92,17 @@ let person = {
 }
 ```
 
+# Promise
+- It's an API rule
+
+```javascript
+let myPromise = new Promise((resolve, reject) => {
+	
+});
+```
+
+# Class
+
 # Rest parameters
 - (grama: '...name') 
 ## Rest parameters
@@ -154,17 +165,7 @@ let a = {
 console.log(myName, age); //'aa', 30
 ```
 
-# Promise
-- It's an API rule
 
-```javascript
-let myPromise = new Promise((resolve, reject) => {
-	
-});
-```
-
-
-# Class
 
 
 
