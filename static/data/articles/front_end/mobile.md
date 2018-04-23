@@ -35,6 +35,8 @@ styleElement.innerHTML = `html { font-size: ${remSize}px; }`;
 //add to head
 document.documentElement.firstElementChild.append(styleElement);
 ```
+# 关于像素
+[todo]
 
 # Ref
 - [https://segmentfault.com/a/1190000004524243](https://segmentfault.com/a/1190000004524243) 
