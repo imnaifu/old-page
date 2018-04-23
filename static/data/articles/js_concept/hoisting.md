@@ -37,5 +37,10 @@ var a;
 console.log(a); //undefined
 a = 1; //这个初始化不会提升
 ```
+
+# ES6 
+`import` 只能用在外层，不能在函数内部动态使用，另外一点很重要的是，`import` 也会被提升！    
+
 # Ref
 - [https://developer.mozilla.org/zh-CN/docs/Glossary/Hoisting](https://developer.mozilla.org/zh-CN/docs/Glossary/Hoisting)
+- [https://segmentfault.com/a/1190000010123067](https://segmentfault.com/a/1190000010123067)
