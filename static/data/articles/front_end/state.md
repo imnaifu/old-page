@@ -37,7 +37,9 @@
 
 ![react_state.jpg](react_state.jpg)
 
-
+# 为什么要单向数据流
+1. 方便debug，更好的 control
+2. 更好的解耦合
 
 # Ref
 - [https://www.zhihu.com/question/47686258/answer/107209140](https://www.zhihu.com/question/47686258/answer/107209140)

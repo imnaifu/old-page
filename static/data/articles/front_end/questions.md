@@ -75,13 +75,6 @@
 	- div + p (后面紧邻的兄弟节点)
 	- div ~ p (后面所有兄弟节点)
 
-## BFC(Block formatting context)
-- a container that has float rules(start from left/right) and also hard boundaries (for not going outside)
-- it can fix some issue like
-	- margin-auto-collapse: create a new BFC for one of them then no collapse since they no loger inside one BFC
-	- float wrapping: create a new BFC for the second element can achieve same functionality as the 'clear:both'
-- [http://lucybain.com/blog/2015/css-block-formatting-context/](http://lucybain.com/blog/2015/css-block-formatting-context/)
-
 ## Clear float
 1. 加一个新元素 with style="clear:both"
 2. set parent element style="overflow： auto/hidden"
@@ -162,9 +155,40 @@ ajax.onreadystatechange = function (){
 ## deep clone
 - 递归copy one by one 	
 
-## remove duplicate value in array
-- 用set
-- let return = Array.from(new Set(a));
+## JS 数组去重
+
+### 1. 用 set 
+```js
+let return = Array.from(new Set(a));
+```
+
+### 2. 循环，indexOf 判断
+```js
+let arr;
+let result = [];
+let len = arr.length;
+for(let i=0; i<len.length; i++){
+	//这里需要判断元素是否在 result 里面，如果数组是排好序的，只用判断循环当前和上一个是否相同，O(n) ->> O(1)
+	if (result.indexOf(arr[i]) === -1){
+		result.push(arr[i]);
+	}
+}
+console.log(result);
+```
+
+
+## JS清空一个数组的最好方法
+```javascript
+let a = [];
+
+//set length to 0
+a.legnth = 0;
+
+//use splice(startIndex, howMany, items...)
+//splice 用于插入，删除和替换数组元素
+a.splice(0, a.length); //in place
+```
+
 
 ## using regex do the same thing as string.trim()
 
@@ -329,17 +353,6 @@ session storage -> same as local storage expire when browser closed
 so just set i=1 and return i++.
 
 # More
-## JS清空一个数组的最好方法
-```javascript
-let a = [];
-
-//set length to 0
-a.legnth = 0;
-
-//use splice(startIndex, howMany, items...)
-//splice 用于插入，删除和替换数组元素
-a.splice(0, a.length); //in place
-```
 
 ## CSS resize
 resize属性规定可否由用户调整元素的尺寸，此外需要设置overflow!='visable'
