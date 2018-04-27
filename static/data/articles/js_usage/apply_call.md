@@ -17,6 +17,10 @@ let sayMe = sayName.bind(user);
 sayMe(); //"me"
 ```
 
+# bind
+- 返回一个全新的函数，和原来的函数没有关系
+- [https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/](https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/)
+
 # 背景
 这两个函数一直出现，因为只是函数，而不是基本概念，所以一直在逃避这俩家伙，到'this'的时候，终于逃不掉了，好吧来看看。
 
