@@ -80,7 +80,7 @@
         },
         {
             "filename": "algorithm/algorithm_concept.md",
-            "title": "Algorithm的一些概念",
+            "title": "Algorithm 的一些概念",
             "type" : "Algorithm",
             "date": "2017-11-23"
         },
@@ -470,13 +470,13 @@
         },
         {
             "filename": "react/react_basic.md",
-            "title": "React基础",
+            "title": "React 基础",
             "type" : "React",
             "date": "March 28, 2018"  
         },
         {
             "filename": "js_usage/es6_module.md",
-            "title": "ES6模块化",
+            "title": "ES6 模块化",
             "type" : "JavaScript",
             "date": "March 29, 2018"  
         },        
@@ -488,7 +488,7 @@
         },
         {
             "filename": "react/react_component.md",
-            "title": "React组件",
+            "title": "React 组件",
             "type" : "React",
             "date": "April 2, 2018"  
         },
@@ -500,7 +500,7 @@
         },
         {
             "filename": "projects/calendar_app.md",
-            "title": "Calendar组件",
+            "title": "Calendar 组件",
             "type" : "Projects",
             "date": "April 9, 2018"  
         },
@@ -512,7 +512,7 @@
         },
         {
             "filename": "projects/react_gallery.md",
-            "title": "Gallery组件",
+            "title": "Gallery 组件",
             "type" : "Projects",
             "date": "April 11, 2018"  
         },
