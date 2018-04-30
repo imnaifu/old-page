@@ -1,5 +1,5 @@
 # 'let' keyword
-scope within the '{}'
+scope within the '{}' - 块级作用域
 
 ```javascript
 if (true){
@@ -11,8 +11,7 @@ if (true){
 ```
 
 # 'const'
-create read-only constant value, if redefine will return silent error
-
+create read-only constant value, if re-define will return silent error
 
 # Template literal
 instead of using double quote or single quote, using `` instead to quote the string
@@ -23,7 +22,18 @@ let example = '123';
 console.log(`this is a ${example}`);
 ```
 
-# Arrow function
+# Arrow function 箭头函数
+面试时被问到箭头函数和普通函数的区别，当然我只知道 'this' 不一样，现在总给下吧。
+其实箭头函数更像是一个“残废版”的普通函数，是缺少了很多东西的。
+
+## 1. 没有自己的 this
+如果是普通函数，函数内部的 this 和外部的 this 是有可能不一样的，但箭头函数内部的 this 就是外面的 this。
+
+## 2. 没有 arguments 
+普通函数有个默认的内部变量 arguments 可以访问到函数的输入参数，箭头函数没有的，只能用 ...rest parameter。
+
+## 3. 没有 .prototype 属性
+意味着箭头函数是不可以拿来做构造函数的。
 
 ```javascript
 //old:
@@ -51,11 +61,11 @@ let person = {
 //new way:
 let person = {
 	name: 'abc';
-	sayName(){
+	sayName1(){
 		console.log(this.name);
 		//working
 	}
-	sayName: () => {
+	sayName2: () => {
 		console.log(this.name);
 		//not working because in arrow function 'this' 
 		//refer to parent scope not 'person'
@@ -72,7 +82,7 @@ let person = {
 	showHobbies: function (){
 		this.hobbies.forEach(function(hobby){
 			console.log(`${this.name} like ${hobby}`);
-			//not working, 'this' means nothing here 
+			//not working, 'this' means window here 
 		}); 
 	}
 	showHobbies: function(){
@@ -85,23 +95,11 @@ let person = {
 	showHobbies: function(){
 		this.hobbies.forEach((hobby)=>{
 			console.log(`${this.name} like ${hobby}`);
-			//arrow function way, because 'this' refer to parent
-			//词法作用域
+			//arrow function dont have its own 'this'
 		})
 	}
 }
 ```
-
-# Promise
-- It's an API rule
-
-```javascript
-let myPromise = new Promise((resolve, reject) => {
-	
-});
-```
-
-# Class
 
 # Rest parameters
 - (grama: '...name') 

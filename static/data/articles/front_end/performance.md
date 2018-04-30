@@ -40,8 +40,11 @@
 - 将所有用于首屏渲染的 CSS 文件整合成一个文件，以 `<style>` 的行内形式内嵌到 `<head>`
 - js 可以用defer, async属性
 
+# 代码
+- 尽量减少 reflow
 
 # Ref
 - [https://www.zhihu.com/question/40505685/answer/86898655](https://www.zhihu.com/question/40505685/answer/86898655)
 - [https://zhuanlan.zhihu.com/p/21417465?refer=no-backend](https://zhuanlan.zhihu.com/p/21417465?refer=no-backend)
 - [https://zhuanlan.zhihu.com/p/30349982](https://zhuanlan.zhihu.com/p/30349982)
+- [https://blog.kaolafed.com/2017/03/30/repaint%E4%B8%8Ereflow/](https://blog.kaolafed.com/2017/03/30/repaint%E4%B8%8Ereflow/)
