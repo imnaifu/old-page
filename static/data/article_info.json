@@ -170,7 +170,7 @@
         },
         {
             "filename": "js_usage/apply_call.md",
-            "title": "Apply & Call",
+            "title": "apply/call & bind",
             "type" : "JavaScript",
             "date": "2017-12-04"
         },
