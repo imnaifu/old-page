@@ -36,7 +36,7 @@
 - content, padding, border, margin
 
 ## css position
-- inherit, static, relative, absolute, fixed, sticky(toggle from relative to fixed)
+- inherit, static, relative, absolute, fixed, sticky (toggle from relative to fixed)
 
 ## css reset, normalize.css
 - reset 清除浏览器默认样式，

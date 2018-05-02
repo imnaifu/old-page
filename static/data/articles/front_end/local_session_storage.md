@@ -7,6 +7,9 @@
 一个很重要的也是唯一的区别就是，local storage可以永久保存，如果不删除的话。
 而session storage在tab关闭或者浏览器关闭都会clear，（refresh 不会clear）。
 
+# 大小
+5M 左右，cookie 大概 4kb
+
 # 小技巧
 如果在session storage里面放上插入的时间，那就可以拿来做缓存了。
 可以判断有还是没有，有再比较时间，如果没滚起就用缓存，没有或者过期就再fetch。
