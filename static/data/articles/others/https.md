@@ -93,3 +93,6 @@ It's a standard security protocol for establishing encrypted links between web s
 # Ref 
 - [https://yq.aliyun.com/articles/54155](https://yq.aliyun.com/articles/54155)
 - [https://www.youtube.com/watch?v=E5FEqGYLL0o](https://www.youtube.com/watch?v=E5FEqGYLL0o)
+- [http://www.ruanyifeng.com/blog/2014/02/ssl_tls.html](http://www.ruanyifeng.com/blog/2014/02/ssl_tls.html)
+- [http://www.ruanyifeng.com/blog/2016/08/migrate-from-http-to-https.html](http://www.ruanyifeng.com/blog/2016/08/migrate-from-http-to-https.html)
+- [http://www.ruanyifeng.com/blog/2014/09/illustration-ssl.html](http://www.ruanyifeng.com/blog/2014/09/illustration-ssl.html)
