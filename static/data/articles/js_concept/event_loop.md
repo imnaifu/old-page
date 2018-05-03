@@ -26,7 +26,49 @@ First, 一步一步按照代码顺序走，如果有异步的就和callback一�
 - Event like click and so on
 - setTimeOut(funciton, time)
 
+# Macrotaks & Microtask
+以前以为上面那些就是全部，结果面试的时候被问到知不知道 marcotask 和 microtask，啪啪啪打脸，算了，每次打脸都是进步。
+简言之，执行栈也有两个，一个给 marcotask，一个给 microtask。    
+    
+![macro_micro_task.jpg](macro_micro_task.jpg)
+
+真正的 event loop 如上图，  
+
+```js
+function func1 () {
+    console.log('func 1')
+}
+function func2 () {
+    console.log('func 2')
+}
+function func3 () {
+    console.log('func 3')
+}
+function func4 () {
+    console.log('func 4')
+}
+
+const func = function () {
+    func1()
+    setTimeout(func2, 0)
+    Promise.resolve().then(
+        () => func3()
+    )
+    func4()
+}()
+
+//func1, func4 ,func3, func2
+```
+
+## macrotasks
+- setTimeout, setInterval, setImmediate, requestAnimationFrame, I/O, UI rendering
+## microtasks
+- process.nextTick, Promises, Object.observe, MutationObserver
+
+
 # Refe
 - [http://www.ruanyifeng.com/blog/2014/10/event-loop.html](http://www.ruanyifeng.com/blog/2014/10/event-loop.html)
 - [https://zhuanlan.zhihu.com/p/29116364](https://zhuanlan.zhihu.com/p/29116364)
 - [https://www.youtube.com/watch?v=6MXRNXXgP_0](https://www.youtube.com/watch?v=6MXRNXXgP_0)
+- [https://zhuanlan.zhihu.com/p/24460769](https://zhuanlan.zhihu.com/p/24460769)
+- [https://stackoverflow.com/questions/25915634/difference-between-microtask-and-macrotask-within-an-event-loop-context](https://stackoverflow.com/questions/25915634/difference-between-microtask-and-macrotask-within-an-event-loop-context)
