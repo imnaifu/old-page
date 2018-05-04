@@ -26,11 +26,11 @@ First, 一步一步按照代码顺序走，如果有异步的就和callback一�
 - Event like click and so on
 - setTimeOut(funciton, time)
 
-# Macrotaks & Microtask
-以前以为上面那些就是全部，结果面试的时候被问到知不知道 marcotask 和 microtask，啪啪啪打脸，算了，每次打脸都是进步。
-简言之，执行栈也有两个，一个给 marcotask，一个给 microtask。    
+# Task & Microtask
+以前以为上面那些就是全部，结果面试的时候被问到知不知道 microtask，啪啪啪打脸，算了，每次打脸都是进步。
+简言之，执行栈也有两个，一个给 normaltask，一个给 microtask。 [这篇文章](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)有个 animation 做的特别好 
     
-![macro_micro_task.jpg](macro_micro_task.jpg)
+![micro_task.jpg](micro_task.jpg)
 
 真正的 event loop 如上图，  
 
@@ -72,3 +72,4 @@ const func = function () {
 - [https://www.youtube.com/watch?v=6MXRNXXgP_0](https://www.youtube.com/watch?v=6MXRNXXgP_0)
 - [https://zhuanlan.zhihu.com/p/24460769](https://zhuanlan.zhihu.com/p/24460769)
 - [https://stackoverflow.com/questions/25915634/difference-between-microtask-and-macrotask-within-an-event-loop-context](https://stackoverflow.com/questions/25915634/difference-between-microtask-and-macrotask-within-an-event-loop-context)
+- [https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
