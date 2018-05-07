@@ -58,3 +58,4 @@ console.log(descriptor);
 
 # Ref
 - [https://javascript.info/property-descriptors](https://javascript.info/property-descriptors)
+- [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get)
