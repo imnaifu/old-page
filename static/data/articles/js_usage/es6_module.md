@@ -1,6 +1,11 @@
 # ES6 模块
 ES6终于自带mudle，更方便代码拆分
 
+# 动态模块引入
+- [https://www.youtube.com/watch?v=bUlkq3PDfRY](https://www.youtube.com/watch?v=bUlkq3PDfRY)
+
+
+
 # export
 export指的是导出的东西，有两种方式，default & named
 每个file可以export一个default和多个named value
