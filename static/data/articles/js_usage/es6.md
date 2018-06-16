@@ -164,6 +164,32 @@ console.log(myName, age); //'aa', 30
 ```
 
 
+# Computed property names（对象计算属性）
+React 里面调用 setState() 的时候，有机会用到。如果我们想动态的 setState ，
+```js
+//es5 旧的写法
+const name = 'someName';
+const value = 'someValue';
+
+const partialState = {};
+partialState[name] = value;
+
+this.setState(partialState);
+```
+
+```js
+//es6 新的写法，这里就用到了对象计算属性
+this.setState({
+	[name]: value
+})
+```
+
+
+
+
+
+
+
 
 
 

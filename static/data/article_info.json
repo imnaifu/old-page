@@ -546,6 +546,12 @@
             "title": "http 演化",
             "type" : "Others",
             "date": "May 3, 2018"  
+        },
+        {
+            "filename": "react/react_confuse.md",
+            "title": "React 小的疑惑点",
+            "type" : "React",
+            "date": "June 16, 2018"  
         }
     ] 
 } 
