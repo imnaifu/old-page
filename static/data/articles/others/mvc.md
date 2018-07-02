@@ -22,3 +22,10 @@
 
 ## 2. controller 薄一点，model 厚一点
 - 可以选择把 model 写的薄一点，意味着 model 只提供数据库操作接口，所有 SQL 都在 controller 解决
+
+# MVVM
+> model, view, view-model  
+这里其实和 MVC 是一样的，不过把 Controller 换了个词而已，因为在 React 的开发结构中， Contoller 需要负责 UI 渲染，所以给了 Controller 一个新的词，叫 view-model。
+- 这里 model 对应我们的 api.js，负责数据的部分
+- view 对应我们 component，对应我们的组件部分
+- view 对应我们的控制组件（一般是按照 Route 划分）

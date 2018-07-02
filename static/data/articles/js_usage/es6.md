@@ -184,6 +184,15 @@ this.setState({
 })
 ```
 
+# Promise.finnaly(() => {})
+无论成功或失败都要进行的操作放在这里
+
+# Object Rest/Spread Properties
+```js
+const obj = { a: 1, b: 2, c: 3 }
+const { a, ...x } = obj;
+// x = { b: 2, c: 3 }
+```
 
 
 

@@ -4,7 +4,6 @@
 - V -> Dumb component
 - C -> Smart component
 
-
 # Dumb & Smart 组件
 ## Dumb
 - 只负责渲染，所有的数据均来源于props，如果有state那也是存放和数据无关的内容（比如样式）
@@ -34,6 +33,22 @@
     <input type="text" value='' ref={}/>
 </div>
 ```
+
+## Pure Component
+如果不设置 ShouldComponentUpdate，那么默认每次改变都会 Rerender。很多没有改变的时候也会触发，影响性能，所以有这个东西。如果是 Pure Component，那么只有在 shallow compare 结果不一样的时候，才会触发 Rerender
+- [http://lucybain.com/blog/2018/react-js-pure-component/](http://lucybain.com/blog/2018/react-js-pure-component/)
+
+## Component Pattern
+1. stateful component
+2. stateless component
+3. container component 
+	- stateless in stateful
+4. higer order component 
+	- a function that takes a stateless component as input return a statefull component
+5. component with render callbacks
+	- takes a function as prop, then render it with state
+> [https://www.youtube.com/watch?v=YaZg8wg39QQ](https://www.youtube.com/watch?v=YaZg8wg39QQ)
+
 
 # Ref
 - [https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/](https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/)

@@ -89,7 +89,13 @@ handleSubmit(){
 
 ```
 
+## Two ways of changing state 
+1. setState(newState); 
+	- pass the new state as a parameter
+2. setState((prevState) => { return newState;})
+ 	- pass a function that takes previous state as a parameter and return the new state
 
+Second way is better because that make u treat setState as a async function.
 
 
 

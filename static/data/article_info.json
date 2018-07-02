@@ -552,6 +552,18 @@
             "title": "React 小的疑惑点",
             "type" : "React",
             "date": "June 16, 2018"  
+        },
+        {
+            "filename": "design/js_app_design.md",
+            "title": "JavaScript 设计哲学",
+            "type" : "Design",
+            "date": "June 21, 2018"  
+        }, 
+        {
+            "filename": "test/enzyme.md",
+            "title": "Enzyme",
+            "type" : "Test",
+            "date": "July 02, 2018"  
         }
     ] 
 } 
