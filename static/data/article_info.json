@@ -564,6 +564,12 @@
             "title": "Enzyme",
             "type" : "Test",
             "date": "July 02, 2018"  
+        },
+        {
+            "filename": "css/css_module.md",
+            "title": "CSS Module",
+            "type" : "CSS",
+            "date": "July 10, 2018"  
         }
     ] 
 } 
