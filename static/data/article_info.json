@@ -570,6 +570,12 @@
             "title": "CSS Module",
             "type" : "CSS",
             "date": "July 10, 2018"  
+        },
+        {
+            "filename": "impeative_declarative",
+            "title": "Imperative & Declarative",
+            "type": "Javascript",
+            "date": "July 21st, 2018"  
         }
     ] 
 } 
