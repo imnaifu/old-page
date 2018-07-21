@@ -123,19 +123,19 @@
         {
             "filename": "js_concept/js_primitive.md",
             "title": "JS Primitive",
-            "type" : "Javascript Concept",
+            "type" : "JavaScript Concept",
             "date": "2017-11-23"
         },
         {
             "filename": "js_concept/js_construct_function.md",
             "title": "构造函数，new",
-            "type" : "Javascript Concept",
+            "type" : "JavaScript Concept",
             "date": "2017-11-23"
         },
         {
             "filename": "js_concept/js_this.md",
             "title": "'this' in JavaScript",
-            "type" : "Javascript Concept",
+            "type" : "JavaScript Concept",
             "date": "2017-11-23"
         },
         {
@@ -147,25 +147,25 @@
         {
            "filename": "js_concept/event_loop.md",
             "title": "Event Loop",
-            "type" : "Javascript Concept",
+            "type" : "JavaScript Concept",
             "date": "2017-11-29"
         },
         {
            "filename": "js_concept/hoisting.md",
             "title": "JavaScript Hoisting",
-            "type" : "Javascript Concept",
+            "type" : "JavaScript Concept",
             "date": "2017-12-01"
         },
         {
            "filename": "js_concept/prototype_constructor_instance.md",
             "title": "原型链，实例，构造函数，继承",
-            "type" : "Javascript Concept",
+            "type" : "JavaScript Concept",
             "date": "2017-12-01"
         },
         {
            "filename": "js_concept/js_execution.md",
             "title": "JavsScript 执行",
-            "type" : "Javascript Concept",
+            "type" : "JavaScript Concept",
             "date": "2017-12-01"
         },
         {
@@ -177,7 +177,7 @@
         {
             "filename": "js_concept/js_closure.md",
             "title": "JavaScript 闭包",
-            "type" : "Javascript Concept",
+            "type" : "JavaScript Concept",
             "date": "2017-12-04"
         },
         {
@@ -387,7 +387,7 @@
         {
             "filename": "js_concept/event_delegation.md",
             "title": "Event Delegation",
-            "type" : "Javascript Concept",
+            "type" : "JavaScript Concept",
             "date": "Jan 7, 2018"             
         },                  
         {
@@ -447,7 +447,7 @@
         {
             "filename": "js_concept/property_descriptor.md",
             "title": "Property descriptor and flag",
-            "type" : "Javascript Concept",
+            "type" : "JavaScript Concept",
             "date": "March 21, 2018"  
         },
         {
@@ -574,7 +574,7 @@
         {
             "filename": "impeative_declarative",
             "title": "Imperative & Declarative",
-            "type": "Javascript",
+            "type": "JavaScript Concept",
             "date": "July 21st, 2018"  
         }
     ] 
