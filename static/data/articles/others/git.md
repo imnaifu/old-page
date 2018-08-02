@@ -21,19 +21,18 @@ Oh，还没说branch是啥。就叫分支，相当于你的每个主版本其实
 
 ## 3.版本回退
 git有三种，对应不同情况
-1. checkout
-    - 其实这不能算是回退，因为根本没有回退
-    - 比如你想查看一个过去的版本 `git checkout version-number`，会让你的本地更新。
-    - 回去的话用 `git checkout master`，回到master
-    - 整个完整的commit history其实都还在，只是本地回退到某个版本
-    - 相当于svn update
+- 用版本库的代码代替工作区的代码
+    - git checkout -- <filename>
 
-2. revert
+- 缓存区退回到工作区
+    - git reset HEAD <filename>
+        
+- revert
     - undo a particular commit
     - 这个功能相当于是去掉某一次commit的东西
     - not dangrous因为不会删除historty，而是重新commit一次，并且这一次commit的内容就是revert
 
-3. reset
+- reset
     - back to a old version (dangerous coz really delete the commit history)
     - 这个很危险，因为这个是真正意义上的回退 -- 回退到某一个版本，并且那个版本之后的都删掉了
     - 直接用的话，本地的还在，但是可以使用 `--hard`，这样本地也会回退到那个版本（贼危险，啥都没了）

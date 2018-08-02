@@ -576,6 +576,12 @@
             "title": "Imperative & Declarative",
             "type": "JavaScript Concept",
             "date": "July 21st, 2018"  
+        },
+        {
+            "filename": "system/proxy.md",
+            "title": "代理",
+            "type": "System",
+            "date": "July 21st, 2018"  
         }
     ] 
 } 
