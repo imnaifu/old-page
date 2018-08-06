@@ -17,7 +17,6 @@ canvas 也是同理，浏览器提供了一个 api `window.requestAnimationFrame
 - 总之 canvas 只是负责画图而已，每 1/60 秒画一个图，就是动画了
 
 # 画图
-
 - 主要是曲线的使用
 - path2D
 - 颜色
