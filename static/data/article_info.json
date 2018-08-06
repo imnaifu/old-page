@@ -582,6 +582,24 @@
             "title": "代理",
             "type": "System",
             "date": "July 21st, 2018"  
+        },
+        {
+            "filename": "front_end/canvas.md",
+            "title": "Canvas",
+            "type": "Front-end",
+            "date": "Aug 4st, 2018"  
+        },  
+        {
+            "filename": "js_usage/websocket.md",
+            "title": "Websocket",
+            "type": "Javascript",
+            "date": "Aug 3rd, 2018"  
+        },
+        {
+            "filename": "others/git_concept.md",
+            "title": "Git 深入",
+            "type": "Others",
+            "date": "Aug 6th, 2018"  
         }
     ] 
 } 
