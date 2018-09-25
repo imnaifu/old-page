@@ -36,7 +36,18 @@
 
 ## Pure Component
 如果不设置 ShouldComponentUpdate，那么默认每次改变都会 Rerender。很多没有改变的时候也会触发，影响性能，所以有这个东西。如果是 Pure Component，那么只有在 shallow compare 结果不一样的时候，才会触发 Rerender
+- PureComponent to call method render only if it detects changes in state or props.
 - [http://lucybain.com/blog/2018/react-js-pure-component/](http://lucybain.com/blog/2018/react-js-pure-component/)
+
+## Pure component / Component
+- 唯一的区别就是 Pure component handles the 'shouldComponentUpdate' for you
+- 对于普通的 component，每次 'shouldComponentUpdate' 都会返回 true
+- 对于 pure component，'shouldComponentUpdate' 会进行 shallow compare
+
+## 什么时候使用 pure component / stateless component
+- stateless component 在每次父组件渲染的时候，都要重新渲染，适用于小组件，并不会带来性能的提升，只是写的方便
+- pure component 会在渲染前进行 state 和 props 的检查，如果没有改变就不渲染
+
 
 ## Component Pattern
 1. stateful component

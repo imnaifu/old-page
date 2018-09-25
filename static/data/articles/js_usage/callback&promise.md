@@ -88,8 +88,44 @@ promise.then(function(data){
 
 # Throw error in promise
 面试时被问到一个小问题，如果在 promise 里面 throw error 会怎样，当时也是懵逼的，很讨厌这种问题其实，就像以前学 C 语言的那些的
-`++(a++)` 之类的。因为都规定了，reject 函数就是拿来说明出错的。不过本着科研的心态，也是要了解一下，看了下规范，大概意思是，throw 
-error 会被当做和直接 reject 一样处理，也就是说 throw 的 error 会被当做变量传入 catch 里面的 function。嗯，还是蛮合理的。
+`++(a++)` 之类的。因为都规定了，reject 函数就是拿来说明出错的。不过本着科研的心态，也是要了解一下，看了下规范，大概意思是，throw error 会被当做和直接 reject 一样处理，也就是说 throw 的 error 会被当做变量传入 catch 里面的 function。嗯，还是蛮合理的。
+
+# Promise 细讲
+2018-09-16 最近遇到一些 promise 的细节问题，稍微看了看，还是记下来比较好 
+### 关于 promise chain 的问题
+
+#### 如果你在 resolve 函数（也就是 .then）函数内 return 了一个值
+1. 如果这个值是一个 promise，那么这个 promise 回被返回，也就是可以直接被后面的 .then() 拿到
+2. 如果这个值不是一个 promise（比如一个 string），那么这个值会被 promise.resolve() 包起来，同样以 promise 的形式 return 
+#### 如果没有 return 
+相当与返回了一个 Promise((resolve, reject) => resolve())  
+这样在下一个 .then(data) data 就会为 undefined
+#### in all
+无论有没有 return，.then() 的调用实际上都会返回一个新的 Promise
+
+### Promise 对象的状态
+Pending -> Fulfilled / Rejected
+
+### Promise 方法
+#### instance method
+- promise.then()
+- promise.catch()
+
+#### static method
+下面的方法全部返回 Promise 对象
+- Promise.all()
+- Promise.race()
+- Promise.resolve()
+- Promise.reject()
+
+### 创建 Promise 对象
+下面也都返回 Promise 对象
+1. `new Promise((resolve, reject) => {})` 
+2. `Promise.resolve('abc') === new Promise((resolve, reject) => {resolve('abc')})`
+3. `Promise.reject('error') === new Promise((resolve, reject) => {reject('error')})` 
+
+
 
 # Ref
 - [https://zhuanlan.zhihu.com/p/22677687](https://zhuanlan.zhihu.com/p/22677687)
+- [http://liubin.org/promises-book/](http://liubin.org/promises-book/)
